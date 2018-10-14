@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"start": "live-server -q --ignorePattern=\".*\\.(coffee|json)\" --wait=0",
+		"start": "git add . && git commit -m \"quick commit\" && git push -u origin master",
 		"build": "coffee build.coffee"
 	}
 }
