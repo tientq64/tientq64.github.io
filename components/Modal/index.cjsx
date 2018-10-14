@@ -6,7 +6,6 @@ class Modal extends React.Component
 			isOpen: yes
 			tasks: []
 			dialogs: []
-		@component = null
 
 	close: (event) ->
 		app.set.call @, "isOpen", no
@@ -14,12 +13,6 @@ class Modal extends React.Component
 
 	onClosed: ->
 		app.appsTaskKill @props.pid
-		return
-
-	taskRun: ->
-		return
-
-	componentWillMount: ->
 		return
 
 	render: ->
@@ -44,8 +37,8 @@ class Modal extends React.Component
 				transitionName={@props.transitionName}
 				usePortal={no}
 			>
-				{if Component = @component or @props.children
-					<Component app={@props.app} modal={@}/>
+				{if @props.children
+					@props.children
 				else
 					["body", "footer"].map (v) =>
 						if @props[v]

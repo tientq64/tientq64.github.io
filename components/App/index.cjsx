@@ -14,9 +14,14 @@ class App extends React.Component
 					env:
 						manager: null
 				storage:
-					env:
-						local: null
-						drive: null
+					local:
+						env:
+							manager: null
+							listeners:
+								connected: []
+					drive:
+						env:
+							manager: null
 			personal:
 				background:
 					type: "image"
@@ -138,16 +143,41 @@ class App extends React.Component
 		fetchEntries()
 		return
 
-	appsAppRun: (path, tasks) ->
+	systemStorageLocalConnect: (cb) ->
+		if @state.system.storage.local.env.manager
+			cb @state.system.storage.local.env.manager
+		else
+			@push "system.storage.local.env.listeners.connected", cb
+		cb
+
+	systemStorageLocalDisconnect: (cbRef) ->
+		@set "system.storage.local.env.listeners.connected",
+			@state.system.storage.local.env.listeners.connected.filter (cbFn) =>
+				cbFn isnt cbRef
+		return
+
+	appsAppRun: (path, tasksPath) ->
 		fetch "#{path}/index.cjsx"
 			.then (res) => res.text()
 			.then (text) =>
-				console.log eval text
+				Component = eval Babel.transform(
+					CoffeeScript.compile text, bare: yes
+					presets: ["react"]
+					plugins: ["syntax-object-rest-spread"]
+				).code
+				app.push.call @, tasksPath,
+					modal:
+						<Modal
+							key={Math.random()}
+							title={path}
+						>
+							<Component/>
+						</Modal>
 				return
 		return
 
 	componentDidMount: ->
-		@appsAppRun "../../programs/FileManager"
+		@appsAppRun "../../programs/FileManager", "apps.app.env.tasks"
 		return
 
 	componentWillMount: ->
@@ -168,7 +198,9 @@ class App extends React.Component
 			(size) =>
 				window.webkitRequestFileSystem? Window.PERSISTENT, size,
 					(fs) =>
-						@set "system.storage.env.local", fs
+						@set "system.storage.local.env.manager", fs, =>
+							for cbFn from @state.system.storage.local.env.listeners.connected
+								cbFn @state.system.storage.local.env.manager
 						return
 					(err) =>
 						return

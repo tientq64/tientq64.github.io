@@ -35,9 +35,18 @@ App = class App extends React.Component {
           }
         },
         storage: {
-          env: {
-            local: null,
-            drive: null
+          local: {
+            env: {
+              manager: null,
+              listeners: {
+                connected: []
+              }
+            }
+          },
+          drive: {
+            env: {
+              manager: null
+            }
           }
         }
       },
@@ -176,16 +185,44 @@ App = class App extends React.Component {
     fetchEntries();
   }
 
-  appsAppRun(path, tasks) {
+  systemStorageLocalConnect(cb) {
+    if (this.state.system.storage.local.env.manager) {
+      cb(this.state.system.storage.local.env.manager);
+    } else {
+      this.push("system.storage.local.env.listeners.connected", cb);
+    }
+    return cb;
+  }
+
+  systemStorageLocalDisconnect(cbRef) {
+    this.set("system.storage.local.env.listeners.connected", this.state.system.storage.local.env.listeners.connected.filter(cbFn => {
+      return cbFn !== cbRef;
+    }));
+  }
+
+  appsAppRun(path, tasksPath) {
     fetch(`${path}/index.cjsx`).then(res => {
       return res.text();
     }).then(text => {
-      console.log(eval(text));
+      var Component;
+      Component = eval(Babel.transform(CoffeeScript.compile(text, {
+        bare: true
+      }), {
+        presets: ["react"],
+        plugins: ["syntax-object-rest-spread"]
+      }).code);
+      app.push.call(this, tasksPath, {
+        modal: React.createElement(
+          Modal,
+          { key: Math.random(), title: path },
+          React.createElement(Component, null)
+        )
+      });
     });
   }
 
   componentDidMount() {
-    this.appsAppRun("../../programs/FileManager");
+    this.appsAppRun("../../programs/FileManager", "apps.app.env.tasks");
   }
 
   componentWillMount() {
@@ -208,7 +245,15 @@ App = class App extends React.Component {
       ref.requestQuota(1024 * 1024 * 4, size => {
         if (typeof window.webkitRequestFileSystem === "function") {
           window.webkitRequestFileSystem(Window.PERSISTENT, size, fs => {
-            this.set("system.storage.env.local", fs);
+            this.set("system.storage.local.env.manager", fs, () => {
+              var cbFn, ref1, results;
+              ref1 = this.state.system.storage.local.env.listeners.connected;
+              results = [];
+              for (cbFn of ref1) {
+                results.push(cbFn(this.state.system.storage.local.env.manager));
+              }
+              return results;
+            });
           }, err => {});
         }
       }, err => {});
@@ -296,7 +341,6 @@ Modal = class Modal extends React.Component {
       tasks: [],
       dialogs: []
     };
-    this.component = null;
   }
 
   close(event) {
@@ -307,12 +351,8 @@ Modal = class Modal extends React.Component {
     app.appsTaskKill(this.props.pid);
   }
 
-  taskRun() {}
-
-  componentWillMount() {}
-
   render() {
-    var Component, ref;
+    var ref;
     return React.createElement(
       "div",
       null,
@@ -334,7 +374,7 @@ Modal = class Modal extends React.Component {
             }
             return this.onClosed();
           }, onClosing: this.props.onClosing, onOpened: this.props.onOpened, onOpening: this.props.onOpening, style: this.props.style, title: (ref = this.props.title) != null ? ref : this.props.name, transitionDuration: this.props.transitionDuration, transitionName: this.props.transitionName, usePortal: false },
-        (Component = this.component || this.props.children) ? React.createElement(Component, { app: this.props.app, modal: this }) : ["body", "footer"].map(v => {
+        this.props.children ? this.props.children : ["body", "footer"].map(v => {
           if (this.props[v]) {
             return React.createElement(
               "div",

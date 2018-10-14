@@ -520,10 +520,19 @@
 	"buffers":
 	[
 		{
-			"file": "components/TaskbarAction/index.cjsx",
+			"file": "components/App/index.cjsx",
 			"settings":
 			{
-				"buffer_size": 882,
+				"buffer_size": 5727,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "programs/FileManager/index.cjsx",
+			"settings":
+			{
+				"buffer_size": 778,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -964,6 +973,7 @@
 		"height": 442.0,
 		"history":
 		[
+			"cls",
 			"8**7",
 			"a+89",
 			"a",
@@ -1028,38 +1038,41 @@
 		"/F/Nodejs/LeafOS",
 		"/F/Nodejs/LeafOS/components",
 		"/F/Nodejs/LeafOS/components/App",
-		"/F/Nodejs/LeafOS/components/Icon",
-		"/F/Nodejs/LeafOS/components/TaskbarAction",
-		"/F/Nodejs/LeafOS/components/TaskbarBattery",
-		"/F/Nodejs/LeafOS/components/TaskbarDatetime",
+		"/F/Nodejs/LeafOS/components/Modal",
+		"/F/Nodejs/LeafOS/components/TaskbarSound",
 		"/F/Nodejs/LeafOS/programs",
+		"/F/Nodejs/LeafOS/programs/FileManager",
 		"/F/Nodejs/LeafOS/scripts"
 	],
 	"file_history":
 	[
+		"/F/Nodejs/LeafOS/components/App/index.cjsx",
+		"/F/Nodejs/LeafOS/components/Modal/index.cjsx",
+		"/F/Nodejs/LeafOS/build.coffee",
+		"/F/Nodejs/LeafOS/programs/FileManager/index.cjsx",
+		"/F/Nodejs/LeafOS/index.html",
+		"/F/Nodejs/LeafOS/.gitignore",
+		"/F/Nodejs/LeafOS/package.json",
+		"/F/Nodejs/LeafOS/README.md",
+		"/F/Nodejs/LeafOS/components/TaskbarAction/index.cjsx",
+		"/F/Nodejs/LeafOS/components/TaskbarSound/index.cjsx",
+		"/F/Nodejs/LeafOS/main.styl",
+		"/F/Nodejs/LeafOS/components/TaskbarDatetime/index.cjsx",
+		"/F/Nodejs/LeafOS/components/TaskbarAction/index.styl",
+		"/F/Nodejs/LeafOS/components/Icons8/index.cjsx",
 		"/F/Nodejs/LeafOS/components/Icon/index.cjsx",
 		"/F/Nodejs/LeafOS/scripts/declare.cjsx",
-		"/F/Nodejs/LeafOS/components/TaskbarSound/index.cjsx",
 		"/F/Nodejs/LeafOS/components/TaskbarBattery/index.cjsx",
-		"/F/Nodejs/LeafOS/components/App/index.cjsx",
-		"/F/Nodejs/LeafOS/components/Icons8/index.cjsx",
 		"/C/Users/tiens/Downloads/svgedit.svg",
 		"/C/Users/tiens/Downloads/bluetooth.svg",
 		"/F/Nodejs/LeafOS/@.sublime-project",
 		"/F/Nodejs/LeafOS/components/App/index.styl",
-		"/F/Nodejs/LeafOS/components/TaskbarDatetime/index.cjsx",
-		"/F/Nodejs/LeafOS/components/TaskbarAction/index.styl",
-		"/F/Nodejs/LeafOS/main.styl",
 		"/F/Nodejs/LeafOS/components/Grid/index.cjsx",
-		"/F/Nodejs/LeafOS/build.coffee",
-		"/F/Nodejs/LeafOS/components/TaskbarAction/index.cjsx",
 		"/F/Nodejs/LeafOS/index.css",
 		"/F/Nodejs/LeafOS/index.js",
 		"/F/Nodejs/LeafOS/declare.cjsx",
 		"/F/Nodejs/LeafOS/components/TaskbarActionCenter/index.cjsx",
 		"/F/Nodejs/LeafOS/components/TaskbarHome/index.cjsx",
-		"/F/Nodejs/LeafOS/components/Modal/index.cjsx",
-		"/F/Nodejs/LeafOS/index.html",
 		"/F/Nodejs/LeafOS/libs/blueprint.css",
 		"/F/Nodejs/LeafOS/libs/blueprint-icons.css",
 		"/F/Nodejs/LeafOS/blueprint.js",
@@ -1074,7 +1087,6 @@
 		"/F/Nodejs/LeafOS/sd.f",
 		"/F/Nodejs/LeafOS/a.js",
 		"/F/Nodejs/LeafOS/indexCopy.html",
-		"/F/Nodejs/LeafOS/package.json",
 		"/F/Nodejs/LeafOS/main.cjsx",
 		"/F/Nodejs/LeafOS/components/Loading/index.cjsx",
 		"/F/Nodejs/LeafOS/components/TaskbarDateTime/index.cjsx",
@@ -1161,10 +1173,7 @@
 		"/F/Nodejs/Taxonomy/index.css",
 		"/F/Nodejs/Taxonomy/index.styl",
 		"/F/Nodejs/Taxonomy/index.coffee",
-		"/F/Nodejs/Taxonomy/build.cmd",
-		"/F/Nodejs/.storage/server-pure-simple.coffee",
-		"/F/Nodejs/Taxonomy/^.sublime-project",
-		"/F/Nodejs/Taxonomy/project.sublime-project"
+		"/F/Nodejs/Taxonomy/build.cmd"
 	],
 	"find":
 	{
@@ -1183,6 +1192,13 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"connectRef",
+			"listeners",
+			"listener",
+			"storage",
+			"Component",
+			"code",
+			"tasks",
 			"IconSvgPaths16",
 			"IconSvgPaths20",
 			"imgSrc",
@@ -1280,32 +1296,62 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "components/TaskbarAction/index.cjsx",
+					"file": "components/App/index.cjsx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 882,
+						"buffer_size": 5727,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								523,
-								523
+								4711,
+								4711
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/User/Syntax/coffee.sublime-syntax"
+							"syntax": "Packages/User/Syntax/coffee.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 207.0,
+						"translation.y": 4725.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "programs/FileManager/index.cjsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 778,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								778,
+								778
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Syntax/coffee.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

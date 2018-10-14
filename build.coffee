@@ -23,16 +23,13 @@ for dir from dirs
 
 js += read "scripts/main.cjsx"
 
-js = coffee.compile js, bare: yes
-
 css = stylus.render css
 
-js = babel.transform js,
+js = babel.transform(
+	coffee.compile js, bare: yes
 	presets: ["react"]
-	plugins: [
-		"syntax-object-rest-spread"
-	]
-.code
+	plugins: ["syntax-object-rest-spread"]
+).code
 
 if minified
 	js = uglify.minify js,

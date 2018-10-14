@@ -3,10 +3,9 @@ class FileManager extends React.Component
 		super props
 
 		@state =
-			dir: app.state.system.storage.env.local?.root
+			dir: null
 			entries: []
-
-		@changeDir()
+		@connectRef = null
 
 	changeDir: (dir = @state.dir) ->
 		return unless dir
@@ -19,15 +18,23 @@ class FileManager extends React.Component
 				return
 		return
 
-	componentWillReceiveProps: (props) ->
-		@changeDir app.state.system.storage.env.local?.root
+	componentDidMount: ->
+		@connectRef = app.systemStorageLocalConnect (manager) =>
+			setTimer 5000, => @changeDir manager.root
+			return
 		return
 
-	render: () ->
+	componentWillUnmount: ->
+		app.systemStorageLocalDisconnect @connectRef
+		return
+
+	render: ->
 		<div className="bp3-dialog-body">
 			{if @state.dir
 				<p>asd</p>
 			else
-				<p>loading...</p>
+				<div style={textAlign: "center"}>
+					<Spinner intent="primary"/>
+				</div>
 			}
 		</div>
