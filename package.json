@@ -8,6 +8,6 @@
 	"scripts": {
 		"start": "live-server -q --ignorePattern=\".*\\.(coffee|json)\" --wait=0",
 		"build": "coffee build.coffee",
-		"commit": "git add . && git commit -m \"quick commit\" && git push -u origin master"
+		"commit": "git add . && git commit -m \"quick commit\" && git push -u origin master && exit"
 	}
 }

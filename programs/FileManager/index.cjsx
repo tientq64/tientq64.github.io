@@ -20,7 +20,7 @@ class FileManager extends React.Component
 
 	componentDidMount: ->
 		@connectRef = app.systemStorageLocalConnect (manager) =>
-			setTimer 5000, => @changeDir manager.root
+			@changeDir manager.root
 			return
 		return
 
