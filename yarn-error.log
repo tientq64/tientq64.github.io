@@ -1,0 +1,47 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\tiens\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js build
+
+PATH: 
+  C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Git\cmd;E:\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;E:\Git LFS;C:\Users\tiens\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Heroku\bin;;C:\Program Files\Microsoft VS Code\bin;C:\Users\tiens\AppData\Roaming\npm;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  8.11.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: write EPIPE
+      at _errnoException (util.js:1022:11)
+      at Socket._writeGeneric (net.js:780:25)
+      at Socket._write (net.js:799:8)
+      at doWrite (_stream_writable.js:397:12)
+      at writeOrBuffer (_stream_writable.js:383:5)
+      at Socket.Writable.write (_stream_writable.js:290:11)
+      at Socket.write (net.js:717:40)
+      at ConsoleReporter._log (C:\Users\tiens\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:86862:17)
+      at ConsoleReporter.log (C:\Users\tiens\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:86850:10)
+      at ConsoleReporter.command (C:\Users\tiens\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:86879:10)
+
+npm manifest: 
+  {
+  	"name": "LeafOS",
+  	"version": "1.0.0",
+  	"main": "index.js",
+  	"author": "TienCoffee",
+  	"license": "MIT",
+  	"private": true,
+  	"scripts": {
+  		"start": "live-server -q --ignorePattern=\".*\\.(coffee|json)\" --wait=0",
+  		"build": "coffee build.coffee"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

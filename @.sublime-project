@@ -1,0 +1,25 @@
+{
+	"folders": [{
+		"path": ".",
+		"file_exclude_patterns": [
+			// "build.coffee",
+			"index.js",
+			"index.css",
+			"yarn-error.log",
+			// "package.json",
+			"*.sublime-project",
+			// "README.md",
+		],
+		"folder_exclude_patterns": [
+			// "tmp"
+		]
+	}],
+	"settings": {
+		"tab_size": 2,
+		"translate_tabs_to_spaces": false
+	},
+	"build_systems": [{
+		"name": "Build",
+		"shell_cmd": "yarn build"
+	}]
+}

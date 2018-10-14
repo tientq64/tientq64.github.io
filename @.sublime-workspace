@@ -1,0 +1,1931 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Taskbar",
+				"TaskbarDateTime"
+			],
+			[
+				"po",
+				"position\tproperty"
+			],
+			[
+				"impo",
+				"@import\t@import url(${0});"
+			],
+			[
+				"impor",
+				"import\t(index.cjsx)"
+			],
+			[
+				"char",
+				"charging"
+			],
+			[
+				"Tas",
+				"TaskbarDateTime\t(index.cjsx)"
+			],
+			[
+				"st",
+				"store"
+			],
+			[
+				"s",
+				"state"
+			],
+			[
+				"datetim",
+				"blueprint-datetime"
+			],
+			[
+				"REAdom",
+				"ReactDOM"
+			],
+			[
+				"sty",
+				"style\tAttr"
+			],
+			[
+				"ta",
+				"text-align\tproperty"
+			],
+			[
+				"slp",
+				"sleep"
+			],
+			[
+				"psn",
+				"poison"
+			],
+			[
+				"brn",
+				"burn"
+			],
+			[
+				"par",
+				"paralysis"
+			],
+			[
+				"pas",
+				"paralysis"
+			],
+			[
+				"min",
+				"minHits"
+			],
+			[
+				"flic",
+				"flinch"
+			],
+			[
+				"For",
+				"FormationAllVsAll"
+			],
+			[
+				"sta",
+				"stat"
+			],
+			[
+				"o",
+				"own|for|in|of|if|return|yield|switch\t(coco.sublime-syntax)"
+			],
+			[
+				"showGridG",
+				"showGridGroup"
+			],
+			[
+				"flavotext",
+				"flavorText"
+			],
+			[
+				"typeda",
+				"typeData"
+			],
+			[
+				"cx",
+				"centerX"
+			],
+			[
+				"nor",
+				"normal"
+			],
+			[
+				"clean",
+				"CleanWebpackPlugin"
+			],
+			[
+				"spec",
+				"specimen"
+			],
+			[
+				"a",
+				"amet\t(App.vue)"
+			],
+			[
+				"adap",
+				"addAnswerPrompt"
+			],
+			[
+				"Num",
+				"Number"
+			],
+			[
+				"spe",
+				"specimen"
+			],
+			[
+				"chim",
+				"Chim"
+			],
+			[
+				"jus",
+				"justifyContent"
+			],
+			[
+				"style",
+				"style"
+			],
+			[
+				"styl",
+				"style"
+			],
+			[
+				"text",
+				"Text"
+			],
+			[
+				"cur",
+				"curFrame"
+			],
+			[
+				"A",
+				"Add"
+			],
+			[
+				"curs",
+				"curSpeech"
+			],
+			[
+				"cuspe",
+				"curSpeech"
+			],
+			[
+				"client",
+				"clientHeight"
+			],
+			[
+				"cliet",
+				"clientHeight"
+			],
+			[
+				"Ma",
+				"Math"
+			],
+			[
+				"px",
+				"px1Sec"
+			],
+			[
+				"bp-d",
+				"bp-dropdown__btn"
+			],
+			[
+				"dropdown",
+				"dropdown \tBootstrap 4 Class"
+			],
+			[
+				"b",
+				"binding"
+			],
+			[
+				"onp",
+				"onPause"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"th",
+				"thumbnailLink"
+			],
+			[
+				"appg",
+				"appG"
+			],
+			[
+				"h",
+				"holotype"
+			],
+			[
+				"res",
+				"restoration"
+			],
+			[
+				"fos",
+				"fossil"
+			],
+			[
+				"restr",
+				"reconstruction"
+			],
+			[
+				"reder",
+				"renderDraw"
+			],
+			[
+				"na",
+				"naturalWidth"
+			],
+			[
+				"sh",
+				"showGrid"
+			],
+			[
+				"sho",
+				"showGrid"
+			],
+			[
+				"stylsc",
+				"styleScoped"
+			],
+			[
+				"load",
+				"loadComp"
+			],
+			[
+				"stlys",
+				"styleScoped"
+			],
+			[
+				"stysc",
+				"styleScoped"
+			],
+			[
+				"stsc",
+				"styleScoped"
+			],
+			[
+				"la",
+				"lang\tAttr"
+			],
+			[
+				"drop",
+				"dropdown-hover"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"def",
+				"defineProperties"
+			],
+			[
+				"max",
+				"MAX_SAFE_INTEGER"
+			],
+			[
+				"for",
+				"fori\tRange Comprehension (inclusive)"
+			],
+			[
+				"Coff",
+				"coffeescript"
+			],
+			[
+				"com",
+				"comp\tcomp"
+			],
+			[
+				"navbar-",
+				"navbar-inverse \tBootstrap 4 Class"
+			],
+			[
+				"w",
+				"w\twidth"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"input",
+				"input-group-btn \tBootstrap 4 Class"
+			],
+			[
+				"d-bock",
+				"d-inline-block \tBootstrap 4 Class"
+			],
+			[
+				"pi",
+				"PI"
+			],
+			[
+				"dm",
+				"dmg"
+			],
+			[
+				"u",
+				"util"
+			],
+			[
+				"syncc",
+				"syncCloak"
+			],
+			[
+				"flex-",
+				"flex-direction"
+			],
+			[
+				"t",
+				"tên"
+			],
+			[
+				"đ",
+				"Đổi"
+			],
+			[
+				"wa",
+				"waitCount"
+			],
+			[
+				"of",
+				"o:f\tObject Method"
+			],
+			[
+				"re",
+				"remove"
+			],
+			[
+				"x",
+				"xOrY"
+			],
+			[
+				"co",
+				"complete"
+			],
+			[
+				"f",
+				"f\tAnonymous Function"
+			],
+			[
+				"jusc",
+				"justify-content-center \tBootstrap 4 Class"
+			],
+			[
+				"btn-out",
+				"btn-outline-secondary \tBootstrap 4 Class"
+			],
+			[
+				"pro",
+				"progress-bar \tBootstrap 4 Class"
+			],
+			[
+				"text-",
+				"text-center \tBootstrap 4 Class"
+			],
+			[
+				"bg-",
+				"bg-inverse \tBootstrap 4 Class"
+			],
+			[
+				"v-",
+				"v-bind\t:prop=\"data\""
+			],
+			[
+				"anima",
+				"animatecss-wobble\twobble - Attention Seekers"
+			],
+			[
+				"badge-",
+				"badge-pill \tBootstrap 4 Class"
+			],
+			[
+				"ba",
+				"badge-default \tBootstrap 4 Class"
+			],
+			[
+				"progr",
+				"progress-bar-animated \tBootstrap 4 Class"
+			],
+			[
+				"btn-",
+				"btn-outline-primary \tBootstrap 4 Class"
+			],
+			[
+				"inline",
+				"list-inline \tBootstrap 4 Class"
+			],
+			[
+				"thead",
+				"thead-default \tBootstrap 4 Class"
+			],
+			[
+				"fix",
+				"fixed-top \tBootstrap 4 Class"
+			],
+			[
+				"card",
+				"card-deck \tBootstrap 4 Class"
+			],
+			[
+				"label",
+				"form-control-label \tBootstrap 4 Class"
+			],
+			[
+				"btn-o",
+				"btn-outline-secondary \tBootstrap 4 Class"
+			],
+			[
+				"border",
+				"border-right-0 \tBootstrap 4 Class"
+			],
+			[
+				"proba",
+				"progress-bar-striped \tBootstrap 4 Class"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"top",
+				"sticky-top \tBootstrap 4 Class"
+			],
+			[
+				"round",
+				"rounded-0 \tBootstrap 4 Class"
+			],
+			[
+				"d-in",
+				"d-inline-block \tBootstrap 4 Class"
+			],
+			[
+				"wrap",
+				"flex-nowrap \tBootstrap 4 Class"
+			],
+			[
+				"sleep",
+				"sleep"
+			],
+			[
+				"class",
+				"class_exists"
+			],
+			[
+				"ng",
+				"Người"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"sha",
+				"sha1"
+			],
+			[
+				"lisy",
+				"list-style-type"
+			],
+			[
+				"al",
+				"album"
+			],
+			[
+				"num",
+				"number"
+			],
+			[
+				"cons",
+				"constructor"
+			],
+			[
+				"atu",
+				"autofocus\tAttr"
+			],
+			[
+				"m",
+				"modifiers"
+			],
+			[
+				"pus",
+				"push-1 \tBootstrap 4 Class"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "components/TaskbarAction/index.cjsx",
+			"settings":
+			{
+				"buffer_size": 882,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Build",
+					""
+				],
+				[
+					"Packages/User/Build/Gulp - Copy.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Build/Gulp.sublime-build",
+					""
+				]
+			],
+			[
+				"Build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Better CoffeeScript/CoffeeScript.sublime-build",
+					""
+				],
+				[
+					"Packages/Better CoffeeScript/CoffeeScript.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/Build/Gulp - Copy.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Build/Gulp.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Better CoffeeScript/CoffeeScript.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 203.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ba",
+				"Set Syntax: JavaScript (Babel) 2"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"bab",
+				"Set Syntax: JavaScript (Babel) 2"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"impo",
+				"ImportJS: import word under cursor"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript (Babel) 2"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript (Babel) 2"
+			],
+			[
+				"csv",
+				"Set Syntax: CSV (Rainbow)"
+			],
+			[
+				"txt",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"coff",
+				"Set Syntax: CoffeeScript 2"
+			],
+			[
+				"url",
+				"Emmet: Encode\\Decode Image to data:URL"
+			],
+			[
+				"coffee",
+				"Coffee: Run Script / Selection"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"boxy",
+				"Boxy Theme: Preferences"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"stylus",
+				"Set Syntax: Stylus"
+			],
+			[
+				"babel",
+				"Set Syntax: JavaScript (Babel) 2"
+			],
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"coco",
+				"Set Syntax: CocoScript 2"
+			],
+			[
+				"co",
+				"Set Syntax: CoffeeScript 2"
+			],
+			[
+				"Snippet: ",
+				"Snippet: <%= Fixtures.identify(:symbol) %>"
+			],
+			[
+				"file:",
+				"File: Revert"
+			],
+			[
+				"rename",
+				"Rename File"
+			],
+			[
+				"rena",
+				"Rename File"
+			],
+			[
+				"file rename",
+				"Rename File"
+			],
+			[
+				"back",
+				"Preferences: Browse Packages"
+			],
+			[
+				"create",
+				"Create backup copy of file"
+			],
+			[
+				"history",
+				"File History: Open most recently closed file"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"com",
+				"CombineAndMinfiy: Build"
+			],
+			[
+				"c",
+				"Set Syntax: C"
+			],
+			[
+				"snippet",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"setting",
+				"Preferences: Settings"
+			],
+			[
+				"cmd",
+				"Preferences: Cmd Caller: Settings"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"pug",
+				"Set Syntax: Pug 2"
+			],
+			[
+				"comm",
+				"Commando: Load Bundle"
+			],
+			[
+				"vue",
+				"Set Syntax: Vue Component 2"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"Vue",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"react",
+				"Snippet: React: cx = React.addons.classSet"
+			],
+			[
+				"compo",
+				"Snippet: React: component skeleton"
+			],
+			[
+				"cof",
+				"Snippet: React: componentDidMount: fn() { ... }"
+			],
+			[
+				"jababel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"coffe",
+				"Set Syntax: CoffeeScript 2"
+			],
+			[
+				"sourc",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"ya",
+				"Set Syntax: YAML"
+			],
+			[
+				"func",
+				"Snippet: Function"
+			],
+			[
+				"unin",
+				"Colorsublime: Uninstall Theme"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"set syntax",
+				"Set Syntax: Stylus"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"jsb",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"jsba",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"cdnjs",
+				"Cdnjs: Search"
+			],
+			[
+				"pla",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"cndjs",
+				"Cdnjs: Search"
+			],
+			[
+				"pak",
+				"Package Control: List Packages"
+			],
+			[
+				"php else",
+				"Snippet: <?php else: ?>"
+			],
+			[
+				"phone",
+				"Build With: Python - Syntax Check"
+			],
+			[
+				"ejs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"pat",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"path",
+				"Snippet: Wrap in try { … } catch (…) { … }"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 442.0,
+		"history":
+		[
+			"8**7",
+			"a+89",
+			"a",
+			"a=4",
+			"asd",
+			"cls",
+			"clr",
+			"sublime.a",
+			"sublime.a+7",
+			"sublime.a++",
+			"sublime.a",
+			"sublime.a=4",
+			"sublime.a",
+			"sublime.window",
+			"Object",
+			"sublime",
+			"window",
+			"window.a",
+			"GLOBAL",
+			"window",
+			"a+7",
+			"a",
+			"a = 4",
+			"sad",
+			"a",
+			"a=4",
+			"npm",
+			"node",
+			"fs",
+			"node",
+			"s+9",
+			"s",
+			"s=4",
+			"npm -v",
+			"function",
+			"Object",
+			"window.self",
+			"document",
+			"window.name",
+			"window",
+			"alert",
+			"1/11",
+			"11/10",
+			"21/12",
+			"32/0",
+			"a+45",
+			"a",
+			"a=3"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/F/Nodejs/LeafOS",
+		"/F/Nodejs/LeafOS/components",
+		"/F/Nodejs/LeafOS/components/App",
+		"/F/Nodejs/LeafOS/components/Icon",
+		"/F/Nodejs/LeafOS/components/TaskbarAction",
+		"/F/Nodejs/LeafOS/components/TaskbarBattery",
+		"/F/Nodejs/LeafOS/components/TaskbarDatetime",
+		"/F/Nodejs/LeafOS/programs",
+		"/F/Nodejs/LeafOS/scripts"
+	],
+	"file_history":
+	[
+		"/F/Nodejs/LeafOS/components/Icon/index.cjsx",
+		"/F/Nodejs/LeafOS/scripts/declare.cjsx",
+		"/F/Nodejs/LeafOS/components/TaskbarSound/index.cjsx",
+		"/F/Nodejs/LeafOS/components/TaskbarBattery/index.cjsx",
+		"/F/Nodejs/LeafOS/components/App/index.cjsx",
+		"/F/Nodejs/LeafOS/components/Icons8/index.cjsx",
+		"/C/Users/tiens/Downloads/svgedit.svg",
+		"/C/Users/tiens/Downloads/bluetooth.svg",
+		"/F/Nodejs/LeafOS/@.sublime-project",
+		"/F/Nodejs/LeafOS/components/App/index.styl",
+		"/F/Nodejs/LeafOS/components/TaskbarDatetime/index.cjsx",
+		"/F/Nodejs/LeafOS/components/TaskbarAction/index.styl",
+		"/F/Nodejs/LeafOS/main.styl",
+		"/F/Nodejs/LeafOS/components/Grid/index.cjsx",
+		"/F/Nodejs/LeafOS/build.coffee",
+		"/F/Nodejs/LeafOS/components/TaskbarAction/index.cjsx",
+		"/F/Nodejs/LeafOS/index.css",
+		"/F/Nodejs/LeafOS/index.js",
+		"/F/Nodejs/LeafOS/declare.cjsx",
+		"/F/Nodejs/LeafOS/components/TaskbarActionCenter/index.cjsx",
+		"/F/Nodejs/LeafOS/components/TaskbarHome/index.cjsx",
+		"/F/Nodejs/LeafOS/components/Modal/index.cjsx",
+		"/F/Nodejs/LeafOS/index.html",
+		"/F/Nodejs/LeafOS/libs/blueprint.css",
+		"/F/Nodejs/LeafOS/libs/blueprint-icons.css",
+		"/F/Nodejs/LeafOS/blueprint.js",
+		"/F/Nodejs/leaf-os/src/components/TaskbarSound/index.cjsx",
+		"/F/Nodejs/LeafOS/libs/blueprint.min.js",
+		"/F/Nodejs/LeafOS/libs/tslib.es6.js",
+		"/F/Nodejs/LeafOS/libs/ResizeObserver.es.js",
+		"/F/Nodejs/LeafOS/libs/react.production.min.js",
+		"/F/Nodejs/LeafOS/libs/blueprint-icons.min.js",
+		"/C/Users/tiens/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/Users/tiens/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/F/Nodejs/LeafOS/sd.f",
+		"/F/Nodejs/LeafOS/a.js",
+		"/F/Nodejs/LeafOS/indexCopy.html",
+		"/F/Nodejs/LeafOS/package.json",
+		"/F/Nodejs/LeafOS/main.cjsx",
+		"/F/Nodejs/LeafOS/components/Loading/index.cjsx",
+		"/F/Nodejs/LeafOS/components/TaskbarDateTime/index.cjsx",
+		"/F/Nodejs/PkmWar/Pkd.sublime-project",
+		"/F/Nodejs/LeafOS/components/App/App.styl",
+		"/F/Nodejs/LeafOS/libs/stylus.min.js",
+		"/F/Nodejs/LeafOS/libs/babel.min.js",
+		"/F/Nodejs/LeafOS/libs/coffee.min.js",
+		"/C/Users/tiens/AppData/Roaming/Sublime Text 3/Packages/User/CoffeeScript.sublime-settings",
+		"/C/Users/tiens/AppData/Roaming/Sublime Text 3/Packages/Better CoffeeScript/CoffeeScript.sublime-settings",
+		"/F/Nodejs/LeafOS/libs/flexboxgrid.css",
+		"/F/Nodejs/LeafOS/libs/normalize.min.css",
+		"/F/Nodejs/LeafOS/libs/blueprint-select.css",
+		"/F/Nodejs/LeafOS/libs/blueprint-datetime.css",
+		"/F/Nodejs/LeafOS/libs/blueprintjs/core",
+		"/F/Nodejs/leaf-os/src/components/App/index.cjsx",
+		"/F/Nodejs/leaf-os/src/components/Modal/index.cjsx",
+		"/F/Nodejs/leaf-os/webpack.config.js",
+		"/F/Nodejs/leaf-os/@.sublime-project",
+		"/F/Nodejs/leaf-os/src/programs/FileManager/index.cjsx",
+		"/C/Users/tiens/AppData/Roaming/Sublime Text 3/Packages/User/ImportJS.sublime-settings",
+		"/F/Nodejs/leaf-os/package.json",
+		"/C/Users/tiens/AppData/Roaming/Sublime Text 3/Packages/ImportJS/ImportJS.sublime-settings",
+		"/F/Nodejs/leaf-os/src/programs/FileManager/package.json",
+		"/F/Nodejs/leaf-os/src/components/Program/index.cjsx",
+		"/F/Nodejs/leaf-os/src/components/App/index.css",
+		"/F/Nodejs/leaf-os/src/programs/Desktop/index.css",
+		"/F/Nodejs/leaf-os/src/programs/Desktop/index.cjsx",
+		"/F/Nodejs/leaf-os/src/components/Desktop/index.cjsx",
+		"/F/Nodejs/leaf-os/src/components/TaskbarBattery/index.cjsx",
+		"/F/Nodejs/leaf-os/src/components/TaskbarDateTime/index.cjsx",
+		"/F/Nodejs/leaf-os/src/components/Loading/index.cjsx",
+		"/C/Users/tiens/AppData/Roaming/Sublime Text 3/Packages/User/Syntax/coffee.sublime-syntax",
+		"/F/Nodejs/leaf-os/src/index.cjsx",
+		"/F/Nodejs/leaf-os/src/components/Desktop/index.css",
+		"/F/Nodejs/leaf-os/.babelrc",
+		"/F/Nodejs/leaf-os/src/index.html",
+		"/F/Nodejs/leaf-os/src/components/App.cjsx",
+		"/F/Nodejs/leaf-os/src/apis/SoundAPI.cjsx",
+		"/F/Nodejs/leaf-os/src/store.cjsx",
+		"/C/Users/tiens/AppData/Roaming/Sublime Text 3/Packages/User/Snippet/coffee/ctor.sublime-snippet",
+		"/F/Nodejs/leaf-os/src/apis/Sound.cjsx",
+		"/F/Nodejs/leaf-os/src/components/TaskbarSound/index.css",
+		"/F/Nodejs/leaf-os/yarn-error.log",
+		"/F/Nodejs/leaf-os/src/index.css",
+		"/F/Nodejs/leaf-os/src/index.js",
+		"/F/Nodejs/leaf-os/dist/index.html",
+		"/F/Nodejs/leaf-os-2/package.json",
+		"/F/Nodejs/create-react-app-test/public/index.html",
+		"/F/Nodejs/leaf-os-2/public/index.html",
+		"/F/Nodejs/leaf-os/yarn.lock",
+		"/F/Nodejs/blueprintvue/package.json",
+		"/C/Users/tiens/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/tiens/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/F/Nodejs/leaf-os/public/index.html",
+		"/F/Nodejs/leaf-os/src/components/App.jsx",
+		"/F/Nodejs/leaf-os/src/App.cjsx",
+		"/F/Nodejs/leaf-os/node_modules/react-scripts/config/paths.js",
+		"/F/Nodejs/leaf-os/node_modules/react-scripts/config/webpack.config.dev.js",
+		"/F/Nodejs/leaf-os/node_modules/react-scripts/config/env.js",
+		"/F/Nodejs/leaf-os/dist/bundle.js",
+		"/F/Nodejs/Taxonomy/@.sublime-project",
+		"/F/Nodejs/leaf-os/src/index.coffee",
+		"/F/Nodejs/leaf-os/src/App.js",
+		"/F/Nodejs/leaf-os/index.html",
+		"/F/Nodejs/leaf-os/index.js",
+		"/C/Users/tiens/AppData/Roaming/Sublime Text 3/Packages/User/Snippet/js/cl.sublime-snippet",
+		"/C/Users/tiens/AppData/Roaming/Sublime Text 3/Packages/User/Snippet/php/php.sublime-snippet",
+		"/F/Nodejs/leaf-os/blueprint.core.js",
+		"/F/Nodejs/vue-webpack-test/config/index.js",
+		"/F/Nodejs/vue-webpack-test/build/webpack.base.conf.js",
+		"/F/Nodejs/vue-webpack-test/config/dev.env.js",
+		"/F/Nodejs/create-react-app-test/src/index.js",
+		"/F/Nodejs/create-react-app-test/src/js/index.js",
+		"/F/Nodejs/create-react-app-test/src/js/App.js",
+		"/F/Nodejs/create-react-app-test/src/components/App.cjsx",
+		"/F/Nodejs/blueprintvue/dist/build.js",
+		"/F/Nodejs/blueprintvue/src/index.js",
+		"/F/Nodejs/blueprintvue/src/main.js",
+		"/F/Nodejs/blueprintjs-test/index.html",
+		"/F/Nodejs/Taxonomy/buildTree.js",
+		"/F/Nodejs/Taxonomy/index.js",
+		"/F/Nodejs/Taxonomy/index.html",
+		"/F/Nodejs/Taxonomy/index.css",
+		"/F/Nodejs/Taxonomy/index.styl",
+		"/F/Nodejs/Taxonomy/index.coffee",
+		"/F/Nodejs/Taxonomy/build.cmd",
+		"/F/Nodejs/.storage/server-pure-simple.coffee",
+		"/F/Nodejs/Taxonomy/^.sublime-project",
+		"/F/Nodejs/Taxonomy/project.sublime-project"
+	],
+	"find":
+	{
+		"height": 49.0
+	},
+	"find_in_files":
+	{
+		"height": 135.0,
+		"where_history":
+		[
+			"F:\\Nodejs\\LeafOS"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"IconSvgPaths16",
+			"IconSvgPaths20",
+			"imgSrc",
+			"batteryImgSrc",
+			"TaskbarBattery",
+			"gridItem",
+			"Wifi",
+			"80px",
+			"TaskbarAction-grid",
+			"div",
+			"Button",
+			"80px",
+			"64",
+			"200px",
+			"auto",
+			"columns",
+			"gridItemStyle",
+			"div",
+			"<td>",
+			"td",
+			"Table",
+			"Callout",
+			"Table",
+			"HTML",
+			"\"",
+			"date",
+			"7.2.4",
+			"Position.TOP",
+			"Icon\\b",
+			"Icon",
+			"Popover",
+			"Icon",
+			"IconSvgPaths20",
+			"IconSvgPaths16",
+			"Blueprint",
+			"\\bClasses",
+			"Classes",
+			"=(e===t.SIZE_STANDARD?Vr.IconSvgPaths16:Vr.Ico",
+			"Kr",
+			"n",
+			"Vr",
+			"=(e===t.SIZE_STANDARD?Vr.IconSvgPaths16:Vr.Ico",
+			"0,v=h.cloneElement(d.target,{",
+			"(d.target.props.className,(p={},p[",
+			"s.understandChildren(),m=this.props.openOnTargetF",
+			"function t(t,n){var r=e.call(this,t,n)||this;return r.isContentMounting=!1,r.isMouseInTargetOrPopover=!1,r.lostFocusOnSamePage=!0,r.refHandlers={popover:function(e){r.popoverElement=e,Zn.safeInvoke(r.props.popoverRef,e)},target:function(e){return r.targetElement=e}},r.handleContentMount=function(){r.isContentMounting&&(Zn.safeInvoke(r.props.popoverDidOpen),r.isContentMounting=!1)},r.handleTargetFocus=function(e){if(r.props.openOnTargetFocus&&r.isHoverInteractionKind()){if(null==e.relatedTarget&&!r.lostFocusOnSamePage)return;r.handleMouseEnter(e)}},r.handleTargetBlur=function(e){r.props.openOnTargetFocus&&r.isHoverInteractionKind()&&(r.isElementInPopover(e.relatedTarget)||r.handleMouseLeave(e)),r.lostFocusOnSamePage=null!=e.relatedTarget},r.handleMouseEnter=function(e){r.isMouseInTargetOrPopover=!0,r.props.usePortal||!r.isElementInPopover(e.target)||r.props.interactionKind!==Sr.HOVER_TARGET_ONLY||r.props.openOnTargetFocus?r.props.disabled||r.setOpenState(!0,e,r.props.hoverOpenDelay):r.handleMouseLeave(e)},r.handleMouseLeave=function(e){r.isMouseInTargetOrPopover=!1,r.setTimeout(function(){r.isMouseInTargetOrPopover||r.setOpenState(!1,e,r.props.hoverCloseDelay)})},r.handlePopoverClick=function(e){var t=e.target,n=null!=t.closest(\".\"+Mt),o=null!=t.closest(\".\"+Bt);n&&!o&&r.setOpenState(!1,e)},r.handleOverlayClose=function(e){var t=e.target;(!Zn.elementIsOrContains(r.targetElement,t)||e.nativeEvent instanceof KeyboardEvent)&&r.setOpenState(!1,e)},r.handleTargetClick=function(e){r.props.disabled||r.isElementInPopover(e.target)||(null==r.props.isOpen?r.setState(function(e){return{isOpen:!e.isOpen}}):r.setOpenState(!r.props.isOpen,e))},r.updatePopoverState=function(e){return r.setState({arrowRotation:function(e){switch(Ir(e)){case\"top\":return-90;case\"left\":return 180;case\"bottom\":return 90;default:return 0}}(e.placement),transformOrigin:function(e){var t=Ir(e.placement);if(null==e.arrowElement)return Rr(t)?Pr(t)+\" \"+kr(t):kr(t)+\" \"+Pr(t);var n=e.arrowElement.clientHeight/2,r=e.offsets.arrow;return Rr(t)?Pr(t)+\" \"+(r.top+n)+\"px\":r.left+n+\"px \"+Pr(t)}(e)}),e},r.state={hasDarkParent:!1,isOpen:r.getIsOpen(t)},r}",
+			"\\.props",
+			"className",
+			"\\.props",
+			"3",
+			"-beta.0",
+			"development",
+			"-beta.0",
+			"@props",
+			" format(\"woff\")",
+			"app",
+			"@props.",
+			"timeout",
+			"js",
+			"code",
+			"path",
+			"v",
+			"paths",
+			"path",
+			"paths",
+			"coffee",
+			"v",
+			"plugins",
+			"-map",
+			"sourcemap",
+			"source-map",
+			"plugins",
+			"presets",
+			"components",
+			"v",
+			"file",
+			"^[a-z]",
+			"^[A-Z]",
+			"Table",
+			"isComponentUnmount"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "components/TaskbarAction/index.cjsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 882,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								523,
+								523
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Syntax/coffee.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 207.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 136.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.cmd-caller":
+	{
+		"height": 112.0
+	},
+	"output.coffee_compile_output":
+	{
+		"height": 145.0
+	},
+	"output.coffeecompile_output":
+	{
+		"height": 206.0
+	},
+	"output.exec":
+	{
+		"height": 238.0
+	},
+	"output.find_results":
+	{
+		"height": 181.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 145.0
+	},
+	"pinned_build_system": "Build",
+	"project": "@.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"index",
+				"src\\index.html"
+			],
+			[
+				"",
+				"ref.yaml"
+			],
+			[
+				".coffee",
+				"node_modules\\coa\\src\\color.coffee"
+			],
+			[
+				".js",
+				"node_modules\\lodash\\head.js"
+			],
+			[
+				"menu",
+				"public\\components\\v-menubar.vue"
+			],
+			[
+				"indexp",
+				"public\\index.pug"
+			],
+			[
+				"indexpu",
+				"public\\index.pug"
+			],
+			[
+				"os/",
+				"public\\vue\\tasks\\os\\index.vue"
+			],
+			[
+				"index.s",
+				"client\\index.styl"
+			],
+			[
+				"style",
+				"node_modules\\pug\\test\\cases\\styles.html"
+			],
+			[
+				"minify",
+				"node_modules\\gulp-minify\\node_modules\\uglify-es\\lib\\minify.js"
+			],
+			[
+				"user",
+				"data\\users.csv"
+			],
+			[
+				"mapdata",
+				"models\\object\\MapData.js"
+			],
+			[
+				"fkm",
+				"models\\class\\Fkm.js"
+			],
+			[
+				"batt",
+				"models\\class\\server\\BattleServer.js"
+			],
+			[
+				"img",
+				"models\\object\\Img.js"
+			],
+			[
+				"init",
+				"scripts\\client\\initGlb.js"
+			],
+			[
+				"setting",
+				"scripts\\client\\tasks\\setting.vue"
+			],
+			[
+				"app",
+				"scripts\\client\\tasks\\app.vue"
+			],
+			[
+				"profile",
+				"scripts\\client\\tasks\\profile.vue"
+			],
+			[
+				"gras",
+				"models\\class\\Grass.js"
+			],
+			[
+				"tall",
+				"models\\class\\TallGrass.js"
+			],
+			[
+				"loader",
+				"scripts\\client\\tasks\\@loaderAsync.vue"
+			],
+			[
+				"load",
+				"scripts\\client\\tasks\\@loaderAsync.vue"
+			],
+			[
+				"fkd",
+				"models\\object\\Fkd.js"
+			],
+			[
+				"grass",
+				"models\\class\\Grass.js"
+			],
+			[
+				"itemca",
+				"scripts\\client\\components\\item-card.vue"
+			],
+			[
+				"move",
+				"models\\object\\Move.js"
+			],
+			[
+				"effe",
+				"models\\object\\Effect.js"
+			],
+			[
+				"fkms",
+				"data\\fkms.csv"
+			],
+			[
+				"styl",
+				"public\\style.css"
+			],
+			[
+				"action",
+				"scripts\\client\\tasks\\fakemonAction.vue"
+			],
+			[
+				"bat",
+				"models\\class\\client\\BattleClient.js"
+			],
+			[
+				"prompt",
+				"scripts\\client\\tasks\\@prompt.vue"
+			],
+			[
+				"modal",
+				"scripts\\client\\components\\@modal.vue"
+			],
+			[
+				"balls",
+				"models\\object\\Balls.js"
+			],
+			[
+				"render",
+				"scripts\\client\\tasks\\render.vue"
+			],
+			[
+				"prof",
+				"scripts\\client\\tasks\\profile.vue"
+			],
+			[
+				"stle",
+				"node_modules\\babel-runtime\\core-js\\string\\trim-left.js"
+			],
+			[
+				"sty",
+				"public\\style.css"
+			],
+			[
+				"profi",
+				"scripts\\client\\tasks\\profile.vue"
+			],
+			[
+				"ren",
+				"scripts\\client\\tasks\\render.vue"
+			],
+			[
+				"mapda",
+				"models\\object\\MapData.js"
+			],
+			[
+				"decla",
+				"scripts\\client\\declare.js"
+			],
+			[
+				"fake",
+				"scripts\\client\\tasks\\fakemon.vue"
+			],
+			[
+				"sett",
+				"scripts\\client\\tasks\\setting.vue"
+			],
+			[
+				"arrow",
+				"models\\class\\Arrow.js"
+			],
+			[
+				"s",
+				"public\\style.css"
+			],
+			[
+				"vue",
+				"scripts\\client\\initVue.js"
+			],
+			[
+				"eff",
+				"models\\object\\Effect.js"
+			],
+			[
+				"moves",
+				"scripts\\client\\tasks\\@moves.vue"
+			],
+			[
+				"components",
+				"node_modules\\array-equal\\component.json"
+			],
+			[
+				"jque",
+				"public\\lib\\jquery-ext.js"
+			],
+			[
+				"socke",
+				"scripts\\client\\socket.js"
+			],
+			[
+				"impl",
+				"scripts\\implMapData.js"
+			],
+			[
+				"socket",
+				"scripts\\server\\socket.js"
+			],
+			[
+				"battle",
+				"scripts\\client\\tasks\\battle.vue"
+			],
+			[
+				"fakedex",
+				"scripts\\client\\tasks\\@fakedex.vue"
+			],
+			[
+				"fkmv",
+				"scripts\\client\\components\\fkm-stats.vue"
+			],
+			[
+				"effec",
+				"models\\object\\Effect.js"
+			],
+			[
+				"stat",
+				"models\\object\\Stat.js"
+			],
+			[
+				"cate",
+				"models\\object\\Category.js"
+			],
+			[
+				"status",
+				"models\\object\\VolaStatus.js"
+			],
+			[
+				"vola",
+				"models\\object\\VolaStatus.js"
+			],
+			[
+				"jsp",
+				"lib\\jsplus.js"
+			],
+			[
+				"jspl",
+				"public\\lib\\jsplus.js"
+			],
+			[
+				"func",
+				"scripts\\client\\funcGlb.js"
+			],
+			[
+				"initvue",
+				"scripts\\client\\initVue.js"
+			],
+			[
+				"initv",
+				"scripts\\client\\initVue.js"
+			],
+			[
+				"clientba",
+				"models\\class\\client\\BattleClient.js"
+			],
+			[
+				"new",
+				"node_modules\\braces\\lib\\parsers-new.js"
+			],
+			[
+				"logic",
+				"scripts\\client\\logic.js"
+			],
+			[
+				"lofic",
+				"node_modules\\liftoff\\lib\\find_config.js"
+			],
+			[
+				"batltec",
+				"models\\class\\client\\BattleClient.js"
+			],
+			[
+				"anim",
+				"scripts\\client\\animate.js"
+			],
+			[
+				"meta",
+				"models\\object\\Meta.js"
+			],
+			[
+				"fakemon",
+				"scripts\\client\\tasks\\fakemon.vue"
+			],
+			[
+				"datatype",
+				"scripts\\datatype.js"
+			],
+			[
+				"fakem",
+				"scripts\\client\\tasks\\fakemon.vue"
+			],
+			[
+				"type",
+				"models\\object\\Type.js"
+			],
+			[
+				"md5",
+				"node_modules\\uuid\\lib\\md5.js"
+			],
+			[
+				"loads",
+				"scripts\\client\\tasks\\loadSetting-#.js"
+			],
+			[
+				"set",
+				"scripts\\client\\tasks\\setting.vue"
+			],
+			[
+				"loadse",
+				"scripts\\client\\tasks\\loadSetting-#.js"
+			],
+			[
+				"sttaic",
+				"node_modules\\builtin-modules\\static.js"
+			],
+			[
+				"stats",
+				"node_modules\\vinyl-fs\\lib\\src\\getStats.js"
+			],
+			[
+				"dataty",
+				"scripts\\datatype.js"
+			],
+			[
+				"obj",
+				"models\\class\\Obj.js"
+			],
+			[
+				"styke",
+				"node_modules\\fast-json-stable-stringify\\example\\key_cmp.js"
+			],
+			[
+				"ett",
+				"models\\class\\Ett.js"
+			],
+			[
+				"php",
+				"C:\\xampp\\php\\php.ini"
+			],
+			[
+				"fu",
+				"js\\func.js"
+			],
+			[
+				"header",
+				"html\\header.php"
+			],
+			[
+				"water",
+				"models\\class\\Water.js"
+			],
+			[
+				"flow",
+				"models\\class\\Flower.js"
+			],
+			[
+				"tree",
+				"models\\class\\Tree.js"
+			],
+			[
+				"maps",
+				"models\\class\\Maps.js"
+			],
+			[
+				"gra",
+				"models\\class\\Grass.js"
+			],
+			[
+				"house",
+				"models\\class\\House.js"
+			],
+			[
+				"moun",
+				"models\\class\\Mountain.js"
+			],
+			[
+				"up",
+				"models\\class\\Up.js"
+			],
+			[
+				"login",
+				"scripts\\client\\tasks\\login-#.js"
+			],
+			[
+				"arr",
+				"models\\class\\Arrow.js"
+			],
+			[
+				"left",
+				"models\\class\\Left.js"
+			],
+			[
+				"down",
+				"models\\class\\Down.js"
+			],
+			[
+				"right",
+				"models\\class\\Right.js"
+			],
+			[
+				"block",
+				"models\\object\\Block.js"
+			],
+			[
+				"uesr",
+				"models\\class\\User.js"
+			],
+			[
+				"pain",
+				"scripts\\client\\paint.js"
+			],
+			[
+				"tre",
+				"models\\class\\Tree.js"
+			],
+			[
+				"loadi",
+				"scripts\\client\\tasks\\loadImgAsync-#.js"
+			],
+			[
+				"map",
+				"meta\\mapdata.txt"
+			],
+			[
+				"piant",
+				"scripts\\client\\paint.js"
+			],
+			[
+				"paint",
+				"scripts\\client\\paint.js"
+			],
+			[
+				"loadim",
+				"scripts\\client\\tasks\\loadImgAsync-#.js"
+			],
+			[
+				"hou",
+				"models\\class\\House.js"
+			],
+			[
+				"log",
+				"scripts\\client\\logic.js"
+			],
+			[
+				"event",
+				"scripts\\client\\event.js"
+			],
+			[
+				"blo",
+				"models\\object\\Block.js"
+			],
+			[
+				"z",
+				"models\\object\\Z.js"
+			],
+			[
+				"mapdatat",
+				"meta\\mapdata.txt"
+			],
+			[
+				"llof",
+				"node_modules\\ajv\\lib\\dot\\allOf.jst"
+			],
+			[
+				"dec",
+				"scripts\\client\\declare.js"
+			],
+			[
+				"logi",
+				"scripts\\client\\logic.js"
+			],
+			[
+				"asd",
+				"node_modules\\ajv\\scripts\\compile-dots.js"
+			],
+			[
+				"class",
+				"scripts\\classProp.js"
+			],
+			[
+				"mapdatas",
+				"models\\object\\MapData.js"
+			],
+			[
+				"w3",
+				"public\\lib\\w3.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 357.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 848.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
