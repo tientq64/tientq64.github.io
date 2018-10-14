@@ -23,7 +23,7 @@ class FileManager extends React.Component
 		@changeDir app.state.system.storage.env.local?.root
 		return
 
-	render: ->
+	render: () ->
 		<div className="bp3-dialog-body">
 			{if @state.dir
 				<p>asd</p>
