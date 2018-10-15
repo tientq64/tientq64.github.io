@@ -10,7 +10,7 @@ class Icons8 extends React.Component
 			}
 		/>
 
-	@defaultProps:
+	@defaultProps =
 		type: "material-rounded"
 		color: "5c7080"
 		size: 20

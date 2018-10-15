@@ -114,5 +114,9 @@ Classes = {
 	...Blueprint.Datetime.Classes
 }
 
+reactElementToJsxString = (el) ->
+	if el then reactElementToJsxString el
+	else el
+
 setTimer = (timer, cb) => setTimeout cb, timer
 app = null

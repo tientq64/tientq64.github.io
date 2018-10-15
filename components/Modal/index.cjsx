@@ -4,52 +4,36 @@ class Modal extends React.Component
 
 		@state =
 			isOpen: yes
-			tasks: []
-			dialogs: []
+			apps:
+				app:
+					env:
+						tasks: []
+		@children = null
+		@props.task.modal = @
 
-	close: (event) ->
-		app.set.call @, "isOpen", no
-		return
-
-	onClosed: ->
-		app.appsTaskKill @props.pid
+	close: ->
+		app.appsAppKill @props.task
 		return
 
 	render: ->
-		<div>
+		Component = @props.children
+		propsModal = Component.modal ? {}
+		<div className="Modal">
 			<Dialog
-				backdropProps={{hidden: yes, ...@props.backdropProps}}
-				canEscapeKeyClose={no}
-				canOutsideClickClose={no}
-				className={@props.className}
-				enforceFocus={yes}
-				icon={@props.icon}
-				isCloseButtonShown={@props.isCloseButtonShown}
+				backdropClassName={propsModal.backdropClassName}
+				backdropProps={{hidden: yes, ...propsModal.backdropProps}}
+				canEscapeKeyClose={propsModal.canEscapeKeyClose ? no}
+				canOutsideClickClose={propsModal.canOutsideClickClose ? no}
+				className={propsModal.className}
+				icon={propsModal.icon}
+				isCloseButtonShown={propsModal.isCloseButtonShown}
 				isOpen={@state.isOpen}
-				onClose={(event) => @props.onClose? event; @close()}
-				onClosed={(el) => @props.onClosed? el; @onClosed()}
-				onClosing={@props.onClosing}
-				onOpened={@props.onOpened}
-				onOpening={@props.onOpening}
-				style={@props.style}
-				title={@props.title ? @props.name}
-				transitionDuration={@props.transitionDuration}
-				transitionName={@props.transitionName}
+				onClose={(event) => propsModal.onClose? event; @close()}
+				style={propsModal.style}
+				title={propsModal.title ? propsModal.name ? propsModal.path}
 				usePortal={no}
 			>
-				{if @props.children
-					@props.children
-				else
-					["body", "footer"].map (v) =>
-						if @props[v]
-							<div key={v} className="bp3-dialog-#{v}">
-								{if typeof @props[v] is "function"
-									@props[v] @
-								else
-									@props[v]
-								}
-							</div>
-				}
+				<Component task={@props.task} {...@props.propsData}/>
 			</Dialog>
-			{@state.dialogs.map (dialog) => dialog}
+			{@state.apps.app.env.tasks.map (task) => task.jsx}
 		</div>

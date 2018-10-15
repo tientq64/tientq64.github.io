@@ -25,6 +25,12 @@ body {
   width: 100%;
   z-index: 999 !important;
 }
+.Modal > .bp3-overlay > .bp3-dialog-container {
+  pointer-events: none;
+}
+.Modal > .bp3-overlay > .bp3-dialog-container > .bp3-dialog {
+  pointer-events: all;
+}
 .TaskbarAction-grid {
   display: grid;
   grid-template-columns: repeat(3, 96px);

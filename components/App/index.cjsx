@@ -34,7 +34,6 @@ class App extends React.Component
 					list: []
 					env:
 						tasks: []
-						dialogs: []
 
 	set: (path, val, nextTick) ->
 		@setState objectPathImmutable.set(@state, path, val), nextTick
@@ -90,8 +89,12 @@ class App extends React.Component
 		else
 			"full-battery"
 
-	systemStorageGetFile: (dir, path, opts, success, error) ->
-		dir.getFile path, opts, success, error
+	systemStorageGetFile: (dir, path, success, error) ->
+		dir.getFile path, create: no, success, error
+		return
+
+	systemStorageCreateFile: (dir, path, success, error) ->
+		dir.getFile path, create: yes, success, error
 		return
 
 	systemStorageWriteFile: (file, data, dataType, success, error) ->
@@ -116,7 +119,7 @@ class App extends React.Component
 				reader.onerror = (err) =>
 					error err
 					return
-				reader["readAs" + returnType[0].toUpperCase() + returnType[1..]]?()
+				reader["readAs" + returnType[0].toUpperCase() + returnType[1..]]? file
 				return
 			error
 		)
@@ -156,8 +159,8 @@ class App extends React.Component
 				cbFn isnt cbRef
 		return
 
-	appsAppRun: (path, tasksPath) ->
-		fetch "#{path}/index.cjsx"
+	appsAppRun: (parent, path, propsData) ->
+		fetch path
 			.then (res) => res.text()
 			.then (text) =>
 				Component = eval Babel.transform(
@@ -165,19 +168,33 @@ class App extends React.Component
 					presets: ["react"]
 					plugins: ["syntax-object-rest-spread"]
 				).code
-				app.push.call @, tasksPath,
-					modal:
-						<Modal
-							key={Math.random()}
-							title={path}
-						>
-							<Component/>
-						</Modal>
+				task =
+					name: Component.name
+					title: Component.modal?.title
+					path: path
+					pid: _.random 9e9
+					parent: parent
+				task.jsx =
+					<Modal
+						key={task.pid}
+						task={task}
+						propsData={propsData}
+					>
+						{Component}
+					</Modal>
+				app.push.call parent, "apps.app.env.tasks", task
 				return
 		return
 
-	componentDidMount: ->
-		@appsAppRun "../../programs/FileManager", "apps.app.env.tasks"
+	appsAppKill: (task) ->
+		for taskChild from task.modal.state.apps.app.env.tasks
+			taskChild.modal.close()
+		@set.call task.modal, "isOpen", no
+		setTimer 100, =>
+			@set.call task.parent, "apps.app.env.tasks",
+				_.filter task.parent.state.apps.app.env.tasks, (taskChild) =>
+					taskChild isnt task
+			return
 		return
 
 	componentWillMount: ->
@@ -209,6 +226,10 @@ class App extends React.Component
 				return
 		return
 
+	componentDidMount: ->
+		@appsAppRun @, "/programs/FileManager/index.cjsx"
+		return
+
 	rootClass: ->
 		backgroundImage: "url(#{@state.personal.background.imgSrc})"
 		backgroundSize: @state.personal.background.size
@@ -220,8 +241,7 @@ class App extends React.Component
 
 	render: ->
 		<div className="App" style={@rootClass()}>
-			{@state.apps.app.env.tasks.map (task) => task.modal}
-			{@state.apps.app.env.dialogs.map (dialog) => dialog}
+			{@state.apps.app.env.tasks.map (task) => task.jsx}
 			<Navbar
 				className="App-taskbar bp3-dark"
 				style={@rootNavbarClass()}

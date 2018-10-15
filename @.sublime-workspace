@@ -527,15 +527,6 @@
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
-		},
-		{
-			"file": "programs/FileManager/index.cjsx",
-			"settings":
-			{
-				"buffer_size": 778,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
@@ -1046,13 +1037,13 @@
 	],
 	"file_history":
 	[
+		"/F/Nodejs/LeafOS/programs/FileManager/index.cjsx",
+		"/F/Nodejs/LeafOS/package.json",
 		"/F/Nodejs/LeafOS/components/App/index.cjsx",
 		"/F/Nodejs/LeafOS/components/Modal/index.cjsx",
 		"/F/Nodejs/LeafOS/build.coffee",
-		"/F/Nodejs/LeafOS/programs/FileManager/index.cjsx",
 		"/F/Nodejs/LeafOS/index.html",
 		"/F/Nodejs/LeafOS/.gitignore",
-		"/F/Nodejs/LeafOS/package.json",
 		"/F/Nodejs/LeafOS/README.md",
 		"/F/Nodejs/LeafOS/components/TaskbarAction/index.cjsx",
 		"/F/Nodejs/LeafOS/components/TaskbarSound/index.cjsx",
@@ -1296,7 +1287,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1322,36 +1313,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4725.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "programs/FileManager/index.cjsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 778,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								778,
-								778
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Syntax/coffee.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 450.0,
+						"translation.y": 4594.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

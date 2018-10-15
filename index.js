@@ -1,4 +1,6 @@
-(function(){var AbstractComponent, AbstractPureComponent, Alert, Alignment, AnchorButton, AnimationStates, App, Blockquote, Breadcrumb, Button, ButtonGroup, Callout, Card, Checkbox, Classes, Code, Collapse, CollapseFrom, CollapsibleList, Colors, ContextMenu, ContextMenuTarget, ControlGroup, DateInput, DatePicker, DateRangeBoundary, DateRangeInput, DateRangePicker, DateTimePicker, Dialog, EditableText, Elevation, Expander, FileInput, FocusStyleManager, FormGroup, H1, H2, H3, H4, H5, H6, Hotkey, Hotkeys, HotkeysTarget, Icon, IconContents, IconNames, IconSvgPaths16, IconSvgPaths20, Icons8, InputGroup, Intent, KeyCombo, Keys, Label, Menu, MenuDivider, MenuItem, Modal, MultiSelect, Navbar, NavbarDivider, NavbarGroup, NavbarHeading, NonIdealState, NumericInput, OL, Omnibar, Overlay, Popover, PopoverInteractionKind, Portal, Position, Pre, ProgressBar, QueryList, Radio, RadioGroup, RangeSlider, Select, Slider, Spinner, Suggest, Switch, Tab, Table, Tabs, Tag, TagInput, TaskbarAction, TaskbarBattery, TaskbarDatetime, TaskbarHome, TaskbarSound, Text, TextArea, TimePicker, TimePickerPrecision, Toast, Toaster, Tooltip, Tree, TreeNode, UL, Utils, app, setTimer;
+(function(){var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var AbstractComponent, AbstractPureComponent, Alert, Alignment, AnchorButton, AnimationStates, App, Blockquote, Breadcrumb, Button, ButtonGroup, Callout, Card, Checkbox, Classes, Code, Collapse, CollapseFrom, CollapsibleList, Colors, ContextMenu, ContextMenuTarget, ControlGroup, DateInput, DatePicker, DateRangeBoundary, DateRangeInput, DateRangePicker, DateTimePicker, Dialog, EditableText, Elevation, Expander, FileInput, FocusStyleManager, FormGroup, H1, H2, H3, H4, H5, H6, Hotkey, Hotkeys, HotkeysTarget, Icon, IconContents, IconNames, IconSvgPaths16, IconSvgPaths20, Icons8, InputGroup, Intent, KeyCombo, Keys, Label, Menu, MenuDivider, MenuItem, Modal, MultiSelect, Navbar, NavbarDivider, NavbarGroup, NavbarHeading, NonIdealState, NumericInput, OL, Omnibar, Overlay, Popover, PopoverInteractionKind, Portal, Position, Pre, ProgressBar, QueryList, Radio, RadioGroup, RangeSlider, Select, Slider, Spinner, Suggest, Switch, Tab, Table, Tabs, Tag, TagInput, TaskbarAction, TaskbarBattery, TaskbarDatetime, TaskbarHome, TaskbarSound, Text, TextArea, TimePicker, TimePickerPrecision, Toast, Toaster, Tooltip, Tree, TreeNode, UL, Utils, app, reactElementToJsxString, setTimer;
 
 ({ FocusStyleManager, Classes, Keys, Utils, AbstractComponent, AbstractPureComponent, Alignment, Colors, Intent, Position, ContextMenu, Alert, Breadcrumb, Button, AnchorButton, ButtonGroup, Callout, Elevation, Card, AnimationStates, Collapse, CollapseFrom, CollapsibleList, ContextMenuTarget, Dialog, EditableText, ControlGroup, Switch, Radio, Checkbox, FileInput, FormGroup, InputGroup, Label, NumericInput, RadioGroup, TextArea, H1, H2, H3, H4, H5, H6, Blockquote, Code, Pre, OL, UL, Hotkey, KeyCombo, HotkeysTarget, Hotkeys, Icon, Menu, MenuDivider, MenuItem, Navbar, NavbarDivider, NavbarGroup, NavbarHeading, NonIdealState, Overlay, Table, Text, PopoverInteractionKind, Popover, Portal, ProgressBar, RangeSlider, Slider, Spinner, Tab, Expander, Tabs, Tag, TagInput, Toast, Toaster, Tooltip, Tree, TreeNode } = Blueprint.Core);
 
@@ -9,6 +11,14 @@
 ({ DateRangeBoundary, DateInput, DatePicker, DateTimePicker, DateRangeInput, DateRangePicker, TimePicker, TimePickerPrecision } = Blueprint.Datetime);
 
 Classes = { ...Blueprint.Core.Classes, ...Blueprint.Select.Classes, ...Blueprint.Datetime.Classes };
+
+reactElementToJsxString = function (el) {
+  if (el) {
+    return reactElementToJsxString(el);
+  } else {
+    return el;
+  }
+};
 
 setTimer = (timer, cb) => {
   return setTimeout(cb, timer);
@@ -64,8 +74,7 @@ App = class App extends React.Component {
         app: {
           list: [],
           env: {
-            tasks: [],
-            dialogs: []
+            tasks: []
           }
         }
       }
@@ -134,8 +143,16 @@ App = class App extends React.Component {
     }
   }
 
-  systemStorageGetFile(dir, path, opts, success, error) {
-    dir.getFile(path, opts, success, error);
+  systemStorageGetFile(dir, path, success, error) {
+    dir.getFile(path, {
+      create: false
+    }, success, error);
+  }
+
+  systemStorageCreateFile(dir, path, success, error) {
+    dir.getFile(path, {
+      create: true
+    }, success, error);
   }
 
   systemStorageWriteFile(file, data, dataType, success, error) {
@@ -159,7 +176,7 @@ App = class App extends React.Component {
         error(err);
       };
       if (typeof reader[name = "readAs" + returnType[0].toUpperCase() + returnType.slice(1)] === "function") {
-        reader[name]();
+        reader[name](file);
       }
     }, error);
   }
@@ -200,29 +217,45 @@ App = class App extends React.Component {
     }));
   }
 
-  appsAppRun(path, tasksPath) {
-    fetch(`${path}/index.cjsx`).then(res => {
+  appsAppRun(parent, path, propsData) {
+    fetch(path).then(res => {
       return res.text();
     }).then(text => {
-      var Component;
+      var Component, ref, task;
       Component = eval(Babel.transform(CoffeeScript.compile(text, {
         bare: true
       }), {
         presets: ["react"],
         plugins: ["syntax-object-rest-spread"]
       }).code);
-      app.push.call(this, tasksPath, {
-        modal: React.createElement(
-          Modal,
-          { key: Math.random(), title: path },
-          React.createElement(Component, null)
-        )
-      });
+      task = {
+        name: Component.name,
+        title: (ref = Component.modal) != null ? ref.title : void 0,
+        path: path,
+        pid: _.random(9e9),
+        parent: parent
+      };
+      task.jsx = React.createElement(
+        Modal,
+        { key: task.pid, task: task, propsData: propsData },
+        Component
+      );
+      app.push.call(parent, "apps.app.env.tasks", task);
     });
   }
 
-  componentDidMount() {
-    this.appsAppRun("../../programs/FileManager", "apps.app.env.tasks");
+  appsAppKill(task) {
+    var ref, taskChild;
+    ref = task.modal.state.apps.app.env.tasks;
+    for (taskChild of ref) {
+      taskChild.modal.close();
+    }
+    this.set.call(task.modal, "isOpen", false);
+    setTimer(100, () => {
+      this.set.call(task.parent, "apps.app.env.tasks", _.filter(task.parent.state.apps.app.env.tasks, taskChild => {
+        return taskChild !== task;
+      }));
+    });
   }
 
   componentWillMount() {
@@ -260,6 +293,10 @@ App = class App extends React.Component {
     }
   }
 
+  componentDidMount() {
+    this.appsAppRun(this, "/programs/FileManager/index.cjsx");
+  }
+
   rootClass() {
     return {
       backgroundImage: `url(${this.state.personal.background.imgSrc})`,
@@ -280,10 +317,7 @@ App = class App extends React.Component {
       "div",
       { className: "App", style: this.rootClass() },
       this.state.apps.app.env.tasks.map(task => {
-        return task.modal;
-      }),
-      this.state.apps.app.env.dialogs.map(dialog => {
-        return dialog;
+        return task.jsx;
       }),
       React.createElement(
         Navbar,
@@ -338,54 +372,44 @@ Modal = class Modal extends React.Component {
     super(props);
     this.state = {
       isOpen: true,
-      tasks: [],
-      dialogs: []
+      apps: {
+        app: {
+          env: {
+            tasks: []
+          }
+        }
+      }
     };
+    this.children = null;
+    this.props.task.modal = this;
   }
 
-  close(event) {
-    app.set.call(this, "isOpen", false);
-  }
-
-  onClosed() {
-    app.appsTaskKill(this.props.pid);
+  close() {
+    app.appsAppKill(this.props.task);
   }
 
   render() {
-    var ref;
+    var Component, propsModal, ref, ref1, ref2, ref3, ref4;
+    Component = this.props.children;
+    propsModal = (ref = Component.modal) != null ? ref : {};
     return React.createElement(
       "div",
-      null,
+      { className: "Modal" },
       React.createElement(
         Dialog,
-        { backdropProps: {
+        { backdropClassName: propsModal.backdropClassName, backdropProps: {
             hidden: true,
-            ...this.props.backdropProps
-          }, canEscapeKeyClose: false, canOutsideClickClose: false, className: this.props.className, enforceFocus: true, icon: this.props.icon, isCloseButtonShown: this.props.isCloseButtonShown, isOpen: this.state.isOpen, onClose: event => {
-            var base;
-            if (typeof (base = this.props).onClose === "function") {
-              base.onClose(event);
+            ...propsModal.backdropProps
+          }, canEscapeKeyClose: (ref1 = propsModal.canEscapeKeyClose) != null ? ref1 : false, canOutsideClickClose: (ref2 = propsModal.canOutsideClickClose) != null ? ref2 : false, className: propsModal.className, icon: propsModal.icon, isCloseButtonShown: propsModal.isCloseButtonShown, isOpen: this.state.isOpen, onClose: event => {
+            if (typeof propsModal.onClose === "function") {
+              propsModal.onClose(event);
             }
             return this.close();
-          }, onClosed: el => {
-            var base;
-            if (typeof (base = this.props).onClosed === "function") {
-              base.onClosed(el);
-            }
-            return this.onClosed();
-          }, onClosing: this.props.onClosing, onOpened: this.props.onOpened, onOpening: this.props.onOpening, style: this.props.style, title: (ref = this.props.title) != null ? ref : this.props.name, transitionDuration: this.props.transitionDuration, transitionName: this.props.transitionName, usePortal: false },
-        this.props.children ? this.props.children : ["body", "footer"].map(v => {
-          if (this.props[v]) {
-            return React.createElement(
-              "div",
-              { key: v, className: `bp3-dialog-${v}` },
-              typeof this.props[v] === "function" ? this.props[v](this) : this.props[v]
-            );
-          }
-        })
+          }, style: propsModal.style, title: (ref3 = (ref4 = propsModal.title) != null ? ref4 : propsModal.name) != null ? ref3 : propsModal.path, usePortal: false },
+        React.createElement(Component, _extends({ task: this.props.task }, this.props.propsData))
       ),
-      this.state.dialogs.map(dialog => {
-        return dialog;
+      this.state.apps.app.env.tasks.map(task => {
+        return task.jsx;
       })
     );
   }
