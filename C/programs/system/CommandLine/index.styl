@@ -1,0 +1,29 @@
+.box
+	font-family monospace
+	background #000
+	color #fff
+pre
+	white-space pre-wrap
+	animation fade .3s
+	&:nth-child(odd)
+		color #8eeb23
+		&:before
+			content "» "
+	&:nth-child(even)
+		color #0ccae2
+.input
+	margin 5px 10px
+	&:not(:first-child)
+		input
+			border-top dashed 1px #222
+			&::placeholder
+				visibility hidden
+	input
+		padding 0 !important
+		border-radius 0
+		box-shadow none !important
+		background transparent
+		color #8eeb23
+@keyframes fade
+	from
+		opacity 0

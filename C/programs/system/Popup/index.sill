@@ -1,0 +1,6 @@
+name: Popup
+icon: "info-sign"
+width: 320
+minimizable: false
+maximizable: false
+picker: true

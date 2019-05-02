@@ -2,38 +2,41 @@
 <html lang="vi">
 <head>
 	<meta charset="utf-8">
-	<title>Leaf OS</title>
-
-	<link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
-	<link rel="stylesheet" href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/@blueprintjs/icons@3.0.0-beta.0/lib/css/blueprint-icons.css">
-	<link rel="stylesheet" href="https://unpkg.com/@blueprintjs/core@3.0.0-beta.0/lib/css/blueprint.css">
-	<link rel="stylesheet" href="https://unpkg.com/@blueprintjs/select@3.0.0-beta.0/lib/css/blueprint-select.css">
-	<link rel="stylesheet" href="https://unpkg.com/@blueprintjs/datetime@3.0.0-beta.0/lib/css/blueprint-datetime.css">
-	<link rel="stylesheet" href="index.css">
-
+	<title>Silly OS</title>
+	<link rel="icon" href="https://cdn.dribbble.com/assets/dribbble-ball-192-ec064e49e6f63d9a5fa911518781bee0c90688d052a038f8876ef0824f65eaf2.png">
+	<link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://unpkg.com/@blueprintjs/icons@3.3.0/lib/css/blueprint-icons.css">
+	<link rel="stylesheet" href="https://unpkg.com/@blueprintjs/core@3.4.0/lib/css/blueprint.css">
+	<link rel="stylesheet" href="https://unpkg.com/@blueprintjs/select@3.3.0/lib/css/blueprint-select.css">
+	<link rel="stylesheet" href="https://unpkg.com/@blueprintjs/datetime@3.4.0/lib/css/blueprint-datetime.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<script> delete module </script>
+	<script src="https://cdn.jsdelivr.net/gh/tiencoffee/libs/tslib.min.js"></script>
 	<script src="https://unpkg.com/classnames@2.2.6/index.js"></script>
 	<script src="https://unpkg.com/dom4@2.1.3/build/dom4.js"></script>
-	<script src="https://unpkg.com/react@16.5.2/umd/react.development.js"></script>
-	<script src="https://unpkg.com/react-dom@16.5.2/umd/react-dom.development.js"></script>
-	<script src="https://unpkg.com/react-transition-group@2.5.0/dist/react-transition-group.js"></script>
-	<script src="https://unpkg.com/popper.js@1.14.4/dist/umd/popper.min.js"></script>
-	<script src="https://unpkg.com/react-popper@1.0.2/dist/index.umd.min.js"></script>
+	<script src="https://unpkg.com/react@16.8.6/umd/react.production.min.js"></script>
+	<script src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.production.min.js"></script>
+	<script src="https://unpkg.com/react-transition-group@4.0.0/dist/react-transition-group.min.js"></script>
+	<script src="https://unpkg.com/popper.js@1.15.0/dist/umd/popper.min.js"></script>
+	<script src="https://unpkg.com/react-popper@1.3.3/dist/index.umd.min.js"></script>
 	<script src="https://unpkg.com/react-day-picker@7.2.4/lib/daypicker.min.js"></script>
-	<script src="https://unpkg.com/react-markdown@4.0.3/umd/react-markdown.js"></script>
-	<script src="https://unpkg.com/@blueprintjs/icons@3.0.0-beta.0/dist/icons.bundle.js"></script>
-	<script src="https://unpkg.com/@blueprintjs/core@3.0.0-beta.0/dist/core.bundle.js"></script>
-	<script src="https://unpkg.com/@blueprintjs/select@3.0.0-beta.0/dist/select.bundle.js"></script>
-	<script src="https://unpkg.com/@blueprintjs/datetime@3.0.0-beta.0/dist/datetime.bundle.js"></script>
-	<script src="https://unpkg.com/object-path-immutable@3.0.0/dist/object-path-immutable.js"></script>
+	<script src="https://unpkg.com/@blueprintjs/icons@3.3.0/dist/icons.bundle.js"></script>
+	<script src="libs/blueprint-core.js"></script>
+	<script src="https://unpkg.com/@blueprintjs/select@3.3.0/dist/select.bundle.js"></script>
+	<script src="https://unpkg.com/@blueprintjs/datetime@3.4.0/dist/datetime.bundle.js"></script>
 	<script src="https://unpkg.com/lodash@4.17.11/lodash.min.js"></script>
-	<script src="https://unpkg.com/moment@2.22.2/min/moment.min.js"></script>
-	<script src="https://unpkg.com/moment@2.22.2/locale/vi.js"></script>
+	<script src="https://unpkg.com/js-yaml@3.13.1/dist/js-yaml.min.js"></script>
+	<script src="https://unpkg.com/moment@2.24.0/min/moment.min.js"></script>
+	<script src="https://unpkg.com/moment@2.24.0/locale/vi.js"></script>
+	<script src="https://unpkg.com/jszip@3.2.1/dist/jszip.min.js"></script>
+	<script src="https://unpkg.com/filesize@4.1.2/lib/filesize.es6.js"></script>
 	<script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
-	<script src="https://coffeescript.org/v2/browser-compiler/coffeescript.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/tiencoffee/libs/coffee.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/tiencoffee/libs/stylus.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/tiencoffee/libs/scopecss.min.js"></script>
 </head>
-<body>
-	<div id="root"></div>
-	<script src="index.js"></script>
+<body hidden>
+	<div id="app"></div>
+	<script src="index.coffee" type="text/coffeescript"></script>
 </body>
 </html>

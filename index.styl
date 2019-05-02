@@ -1,0 +1,409 @@
+appearance()
+	-webkit-appearance arguments
+	-moz-appearance arguments
+	appearance arguments
+box-shadow()
+	-webkit-box-shadow arguments
+	box-shadow arguments
+transform-origin-x()
+	-webkit-transform-origin-x arguments
+	transform-origin-x arguments
+transform-origin-y()
+	-webkit-transform-origin-y arguments
+	transform-origin-y arguments
+user-drag()
+	-webkit-user-drag arguments
+	user-drag arguments
+user-select()
+	-webkit-user-select arguments
+	-moz-user-select arguments
+	-ms-user-select arguments
+	user-select arguments
+
+::-webkit-scrollbar
+	appearance none
+	width 12px
+	height 12px
+	background-color #eee
+	box-shadow inset 0 0 4px 0 #ddd
+::-webkit-scrollbar-thumb
+	border solid 4px transparent
+	background-color #ccc
+	&:hover
+		background-color #bbb
+	&:active
+		background-color #aaa
+
+*
+	user-select none
+body
+	overflow hidden
+	tab-size 2
+img, a
+	user-drag none
+a
+	cursor default
+button, a, select, [tabindex]
+	outline 0 !important
+
+[data-pantap-pan]
+	iframe
+		pointer-events none
+
+.app
+	position relative
+	left 0
+	top 0
+	width 100%
+	height 100%
+	overflow-x hidden
+
+.bp3-navbar-group
+	height 100%
+.bp3-icon
+	pointer-events none
+.bp3-popover-content
+	height 100%
+	background-color #fff
+.bp3-portal
+	z-index 1
+.bp3-html-table
+	&.bp3-fill
+		width 100%
+	&.bp3-html-table-sticky
+		thead tr
+			position sticky
+			top 0
+			background #fff
+			box-shadow 0 1px 0 0 #10161a26
+		tbody tr:first-child td
+			box-shadow none !important
+	tbody:first-child tr:first-child td
+		box-shadow none !important
+	.bp3-icon
+		color #5c7080
+.bp3-navbar
+	box-shadow 0 0 0 1px #10161a26, 0 0 1px 1px #10161a26
+.bp3-popover
+	box-shadow 0 0 0 1px #10161a26, 0 2px 10px #10161a59
+	.bp3-popover-arrow:before
+		box-shadow 1px 1px 6px 1px #10161a33
+.bp3-dialog
+.bp3-navbar
+.bp3-popover-content
+	transition background-color .3s
+.bp3-popover-arrow-fill
+	transition fill .3s
+.bp3-menu
+	&:empty
+		&:after
+			content "Empty"
+			padding 5px 7px
+			display block
+			color #5c708080
+			cursor not-allowed
+.bp3-text-overflow-ellipsis
+	white-space pre
+.bp3-tab-panel
+	width 100%
+
+for anim in maximize restore
+	@keyframes dialog-{anim}
+		to
+			left 0
+			top 0
+			width 100%
+			height 100%
+			border-radius 0
+@keyframes dialog-enter-custom
+	from
+		transform scale(.9)
+		opacity 0
+	to
+		transform scale(1)
+		opacity 1
+
+.bp3-dialog
+	position absolute
+	width unset
+	max-width 100%
+	max-height 100%
+	min-width 180px
+	min-height 60px
+	margin 0
+	padding 0
+	background #fff
+	// background #ebf1f5
+	box-shadow 0 0 10px 2px #0004, 0 0 2px 1px #0006 !important
+	pointer-events none
+	will-change position, transform
+	&:not(.dialog-maximize):not(.dialog-newly)
+		animation dialog-restore .3s cubic-bezier(.9, 0, 1, .1) forwards reverse
+	&.dialog-minimize
+		visibility hidden
+	&.dialog-maximize
+		animation dialog-maximize .3s cubic-bezier(0, .9, .1, 1) forwards
+		.bp3-dialog-header
+			min-height 34px
+			margin 0
+			padding 0 4px
+		.bp3-dialog-body
+			margin 0
+	.bp3-dialog-header
+		min-height 38px
+		margin 0 4px
+		padding 0
+		border-bottom solid 1px #8886
+		background transparent
+		white-space nowrap
+		box-shadow none
+		transition-property min-height, margin, padding
+		transition-duration .3s
+		pointer-events all
+		.bp3-heading
+			margin-left 4px
+			pointer-events none
+		.dialog-icon
+			width 16px
+			height 16px
+	.bp3-dialog-body
+		position relative
+		margin 0 4px 4px
+		background-color #fff
+		overflow hidden
+		transition margin .3s
+		pointer-events all
+		> iframe
+			width 100%
+			height 100%
+			border 0
+	.bp3-dialog-footer-actions
+		margin-top 15px
+		.bp3-button-group
+			.bp3-button
+				margin-left 0
+	[data-dialog-edge]
+		position absolute
+		pointer-events all
+	[data-dialog-edge=lt]
+		left 0
+		top 0
+		width 16px
+		height 16px
+		cursor nw-resize
+		clip-path polygon(0 0, 16px 0, 16px 4px, 4px 4px, 4px 16px, 0 16px)
+	[data-dialog-edge=ct]
+		left 4px
+		top 0
+		right 4px
+		height 4px
+		cursor n-resize
+	[data-dialog-edge=rt]
+		right 0
+		top 0
+		width 16px
+		height 16px
+		cursor ne-resize
+		clip-path polygon(0 0, 16px 0, 16px 16px, 12px 16px, 12px 4px, 0 4px)
+	[data-dialog-edge=lm]
+		left 0
+		top 4px
+		width 4px
+		bottom 4px
+		cursor w-resize
+	[data-dialog-edge=rm]
+		right 0
+		top 4px
+		width 4px
+		bottom 4px
+		cursor e-resize
+	[data-dialog-edge=lb]
+		left 0
+		bottom 0
+		width 16px
+		height 16px
+		cursor sw-resize
+		clip-path polygon(0 0, 4px 0, 4px 12px, 16px 12px, 16px 16px, 0 16px)
+	[data-dialog-edge=cb]
+		left 4px
+		bottom 0
+		right 4px
+		height 4px
+		cursor s-resize
+	[data-dialog-edge=rb]
+		right 0
+		bottom 0
+		width 16px
+		height 16px
+		cursor se-resize
+		clip-path polygon(0 12px, 12px 12px, 12px 0, 16px 0, 16px 16px, 0 16px)
+.dialog-appear-custom
+	opacity 0
+.dialog-enter-custom
+	animation dialog-enter-custom .3s
+.dialog-exit-active
+	transform scale(.9)
+	opacity 0
+	transition .3s
+
+.bp3-dark
+	.bp3-dialog
+		// background #293742
+		background #30404d
+	.bp3-dialog-body
+		background-color #30404d
+	.bp3-html-table
+		td
+			.bp3-icon
+				color #bfccd6
+	.bp3-html-table-sticky
+		thead tr
+			background #30404d
+
+.fa, .far, .fas, .fab
+	width 16px
+	height 16px
+	display inline-flex
+	justify-content center
+	align-items center
+	font-size 16px
+
+.desktop
+	position absolute
+	width 100%
+	z-index 1
+
+.taskbar
+	position absolute
+	width 100%
+.taskbar-task-wrap
+	display inline-grid !important
+	grid-template-columns minmax(auto, 180px)
+.taskbar-actions
+	width 320px
+	overflow hidden
+.taskbar-action
+	height 65px
+	border-right solid 1px #8886
+	border-bottom solid 1px #8886
+	border-radius 0
+	transform translate(1px, 1px)
+	.bp3-icon
+		margin 0
+
+.top-layer
+	pointer-events none
+.night-light
+	transition background .3s
+	&[data-night-light=true]
+		background #fc02
+.brightness
+	background #000
+	transition opacity .3s
+
+.scrollable
+	position absolute
+	width 100%
+	height 100%
+	overflow auto !important
+	scroll-behavior smooth
+.scrollable-x
+	@extend .scrollable
+	overflow-y hidden
+.scrollable-y
+	@extend .scrollable
+	overflow-x hidden
+.selectable
+	user-select text !important
+.full
+	position absolute
+	left 0
+	top 0
+	width 100%
+	height 100%
+.absolute
+	position absolute
+.relative
+	position relative
+.fixed
+	position fixed
+.overflow-hide
+	overflow hidden
+	clip-path inset(0 0 0 0)
+.overflow-auto
+	overflow auto
+.overflow-clip
+	overflow auto
+	clip-path inset(0 0 0 0)
+.nowrap
+	white-space pre
+.ellipsis
+	white-space pre
+	overflow hidden
+	text-overflow ellipsis
+
+.row
+	display flex
+	flex-wrap wrap
+	&.reverse
+		flex-direction row-reverse
+	&.vertical
+		flex-direction column
+		flex-wrap nowrap
+		&.reverse
+			flex-direction column-reverse
+	&.nowrap
+		flex-wrap nowrap
+.left
+	justify-content flex-start
+.center
+	justify-content center
+.right
+	justify-content flex-end
+.between
+	justify-content space-between
+.around
+	justify-content space-around
+.evenly
+	justify-content space-evenly
+.top
+	align-items flex-start
+.middle
+	align-items center
+.bottom
+	align-items flex-end
+.col
+	flex-grow 1
+for i in 0..12
+	width = round(i / 12 * 100, 5)
+	.row
+		&:not(.vertical)
+			.col-{i}
+				width width ? (width)% : auto
+			.offset-{i}
+				margin-left (width)%
+	.col-{i}
+		flex-basis width ? (width)% : auto
+	.z-{i}
+		z-index i
+
+for prop in padding margin
+	p = substr(prop 0 1)
+	for val, size in 0 2 5 10 20 50
+		val = (val)px !important
+		.{p}-{size}
+			{prop} val
+		.{p}t-{size}
+			{prop}-top val
+		.{p}r-{size}
+			{prop}-right val
+		.{p}b-{size}
+			{prop}-bottom val
+		.{p}l-{size}
+			{prop}-left val
+		.{p}x-{size}
+			{prop}-left val
+			{prop}-right val
+		.{p}y-{size}
+			{prop}-top val
+			{prop}-bottom val
