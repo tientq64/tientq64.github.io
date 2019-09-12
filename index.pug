@@ -4,17 +4,17 @@
 		.d-bottomleft.w-2.h-2.m-1.full
 			button.nes-btn.d-left.w-2.h-2.p-0(
 				@pointerdown="func.setKey('KeyA')"
-				@pointerup="func.setKey()"
+				@pointermove="func.setKey()"
 			) &lt;
 			button.nes-btn.d-right.w-2.h-2(
 				@pointerdown="func.setKey('KeyD')"
-				@pointerup="func.setKey()"
+				@pointermove="func.setKey()"
 			) &gt;
 			button.nes-btn.d-top.w-2.h-2(
 				@pointerdown="func.setKey('KeyW')"
-				@pointerup="func.setKey()"
+				@pointermove="func.setKey()"
 			) ^
 			button.nes-btn.d-bottom.w-2.h-2(
 				@pointerdown="func.setKey('KeyS')"
-				@pointerup="func.setKey()"
+				@pointermove="func.setKey()"
 			) v
