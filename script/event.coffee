@@ -3,5 +3,5 @@ window.addEventListener "keydown", (event) =>
 	return
 
 window.addEventListener "keyup", func.onKeyUp
-window.addEventListener "mouseup", func.onKeyUp
+window.addEventListener "pointerup", func.onKeyUp
 window.addEventListener "blur", func.onKeyUp
