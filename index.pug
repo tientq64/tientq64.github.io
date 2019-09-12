@@ -3,18 +3,22 @@
 	.d-full
 		.d-bottomleft.w-2.h-2.m-1.full
 			button.nes-btn.d-left.w-2.h-2.p-0(
-				@pointerdown="func.setKey('KeyA')"
-				@pointermove="func.setKey()"
+				@touchstart="func.setKey('KeyA')"
+				@touchmove="func.setKey()"
+				@touchend="func.setKey()"
 			) &lt;
 			button.nes-btn.d-right.w-2.h-2(
-				@pointerdown="func.setKey('KeyD')"
-				@pointermove="func.setKey()"
+				@touchstart="func.setKey('KeyD')"
+				@touchmove="func.setKey()"
+				@touchend="func.setKey()"
 			) &gt;
 			button.nes-btn.d-top.w-2.h-2(
-				@pointerdown="func.setKey('KeyW')"
-				@pointermove="func.setKey()"
+				@touchstart="func.setKey('KeyW')"
+				@touchmove="func.setKey()"
+				@touchend="func.setKey()"
 			) ^
 			button.nes-btn.d-bottom.w-2.h-2(
-				@pointerdown="func.setKey('KeyS')"
-				@pointermove="func.setKey()"
+				@touchstart="func.setKey('KeyS')"
+				@touchmove="func.setKey()"
+				@touchend="func.setKey()"
 			) v
