@@ -1,16 +1,16 @@
 #game
 #app
-	.d-full
+	.d-full(@click="alert(3)")
 		.d-bottomleft.w-2.h-2.m-1.full
 			button.nes-btn.d-left.w-2.h-2.p-0(
-				@click="func.setKey('KeyA')"
+				@mousedown="func.setKey('KeyA')"
 			) &lt;
 			button.nes-btn.d-right.w-2.h-2(
-				@click="func.setKey('KeyD')"
+				@mousedown="func.setKey('KeyD')"
 			) &gt;
 			button.nes-btn.d-top.w-2.h-2(
-				@click="func.setKey('KeyW')"
+				@mousedown="func.setKey('KeyW')"
 			) ^
 			button.nes-btn.d-bottom.w-2.h-2(
-				@click="func.setKey('KeyS')"
+				@mousedown="func.setKey('KeyS')"
 			) v
