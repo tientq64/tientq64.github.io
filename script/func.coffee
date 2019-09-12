@@ -44,7 +44,7 @@ func =
 		return
 
 	setKey: (code) ->
-		key ?= code
+		key = code
 		return
 
 	onKeyUp: ->
