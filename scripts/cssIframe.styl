@@ -1,0 +1,336 @@
+@font-face
+	font-family "EnvyCodeR"
+	src url("http://cdn.jsdelivr.net/gh/tiencoffee/data/fonts/EnvyCodeR.ttf")
+
+*
+	vertical-align baseline
+html
+	height 100%
+	overflow hidden
+	user-select none
+body
+	&.fix-autosize
+		position absolute
+		width max-content
+		height max-content
+textarea
+	resize vertical
+
+.bp3-icon
+	pointer-events none
+
+.row
+	display flex
+	flex-flow row
+	flex-wrap wrap
+	&.reverse
+		flex-direction row-reverse
+.column
+	display flex
+	flex-flow column
+	flex-direction column
+	flex-wrap nowrap
+	&.reverse
+		flex-direction column-reverse
+for i in 1..12
+	.col-{i}
+		val = round(i/12*100%, 4) !important
+		width val
+		flex-basis val
+.col
+	flex-grow 1
+	min-height 0
+.col-0
+	flex-grow 0
+.start
+	justify-content flex-start
+.center
+	justify-content center
+.end
+	justify-content flex-end
+.between
+	justify-content space-between
+.around
+	justify-content space-around
+.evenly
+	justify-content space-evenly
+.start
+	justify-content flex-start
+.center
+	justify-content center
+.end
+	justify-content flex-end
+.top
+	align-items flex-start
+.middle
+	align-items center
+.bottom
+	align-items flex-end
+.start-self
+	margin-right auto
+.center-self
+	margin-left auto
+	margin-right auto
+.end-self
+	margin-left auto
+.top-self
+	align-self flex-start
+.middle-self
+	align-self center
+.bottom-self
+	align-self flex-end
+.full
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100% !important
+	z-index 0
+.absolute
+	position absolute
+.relative
+	position relative
+.fixed
+	position fixed
+for dis in block inline-block inline flex
+	.{dis}
+		display dis
+.hidden
+	display none !important
+for i in 0..5
+	.z-{i}
+		z-index i
+	if i
+		.-z-{i}
+			z-index -(i)
+.scroll
+	overflow auto
+	scroll-behavior smooth
+	&.tbody
+		overflow overlay
+.no-scroll
+	overflow hidden
+.wrap
+	flex-wrap wrap
+.nowrap
+	flex-wrap nowrap
+.text-wrap
+	white-space normal
+	word-break break-word
+.text-nowrap
+	white-space nowrap
+.text-capitalize
+	text-transform capitalize
+.text-code
+	font-family "EnvyCodeR", monospace !important
+	white-space pre
+	tab-size 2
+.text-ellipsis
+.text-ellipsis.bp3-button> .bp3-button-text
+	overflow hidden
+	text-overflow ellipsis
+	white-space pre
+.text-pre-wrap
+	white-space pre-wrap
+.text-pre
+	white-space pre
+.pointer-events
+	pointer-events auto
+.no-pointer-events
+	pointer-events none
+.select
+	user-select text
+.select-all
+	user-select all
+.no-select
+	user-select none
+.no-resize
+	resize none
+for cursor in default pointer
+	.cursor-{cursor}
+		cursor cursor
+		/.bp3-html-table.bp3-interactive&
+		/.bp3-html-table.bp3-interactive &
+			td
+				cursor cursor !important
+.border-shadow
+	box-shadow inset 0 0 0 1px #10161a66, inset 0 -1px 0 #10161a33
+.border
+	border solid 1px #10161a26
+for pos in left right top bottom
+	.border-{pos}
+		border-{pos} solid 1px #10161a26
+	.border-{pos}-0
+		border-{pos}-width 0 !important
+.border-0
+	border 0 !important
+.rounded
+	border-radius 6px
+.rounded-0
+	border-radius 0 !important
+for pos in left top right bottom
+	.border-{pos}-0
+		border 0
+	.rounded-{pos}
+		border-radius 6px
+for align in left center right justify
+	.text-{align}
+		text-align align
+sizes = {
+	w: width
+	h: height
+}
+for k, size in sizes
+	for v in 25 50 75 100 0
+		.{k}-{v}
+			{size} (v)%
+	for v in auto inherit
+		.{k}-{v}
+			{size} v
+	.{k}-fill
+		{size} -webkit-fill-available
+for prop in padding margin
+	p = substr(prop 0 1)
+	for val, size in 50 20 10 5 1 0
+		size = 5 - size
+		arr = p is "m" ? (-1 1) : (1)
+		for i in arr
+			if i is 1 or i is -1 and size
+				s = i is 1 ? "" : "-"
+				val2 = (val*i)px !important
+				.{s}{p}-{size}
+					{prop} val2
+				.{s}{p}x-{size}
+					{prop}-left val2
+					{prop}-right val2
+				.{s}{p}y-{size}
+					{prop}-top val2
+					{prop}-bottom val2
+				.{s}{p}t-{size}
+					{prop}-top val2
+				.{s}{p}r-{size}
+					{prop}-right val2
+				.{s}{p}b-{size}
+					{prop}-bottom val2
+				.{s}{p}l-{size}
+					{prop}-left val2
+.m-auto
+	margin auto
+.bg-selection
+	background #7dbcff99 !important
+.bg-transparent
+	background transparent
+.img-pixelated
+	image-rendering pixelated
+.float-left
+	float left
+.float-right
+	float right
+.fa, .fas, .far, .fab
+	width 16px
+	height 16px
+	max-width 16px
+	max-height 16px
+	font-size 16px
+	text-align center
+
+.bp3-navbar-group
+	height 100%
+.bp3-portal
+	bottom 0
+	pointer-events none
+.bp3-overlay
+	pointer-events auto
+	&:not(.bp3-overlay-open)
+		pointer-events none
+.bp3-html-table
+	&.bp3-fill
+		width 100%
+	&.bp3-html-table-bordered
+		tbody tr:first-child td
+			box-shadow inset 1px 0 0 0 #10161a26 !important
+			&:first-child
+				box-shadow none !important
+	&.bp3-interactive tbody tr
+		td
+			background transparent !important
+		&:not(.bg-selection)
+			&:hover
+				background #bfccd64d
+			&:active
+				background #bfccd67d
+	&.bp3-fixed
+		height 100%
+		display flex
+		flex-direction column
+		tbody
+			overflow overlay
+		tr
+			@extend .row
+			&:first-child
+				td
+					box-shadow none
+		th
+			box-shadow inset 0 -1px 0 0 #10161a26
+	&.text-ellipsis
+		td, th
+			@extend .text-ellipsis
+	.thead
+		box-shadow inset 0 -1px 0 0 #10161a26
+.bp3-dark
+	.bp3-html-table
+		thead
+			box-shadow inset 0 -1px 0 0 #ffffff26
+.bp3-icon
+	vertical-align bottom
+	color #5c7080
+.bp3-dialog
+.bp3-popover
+	box-shadow 0 0 0 1px #10161a1a, 0 1px 1px #10161a33, 0 2px 6px #10161a33
+.bp3-input[type=number]
+	&::-webkit-inner-spin-button
+		-webkit-appearance none
+.bp3-menu-item-label
+	font-size smaller
+.bp3-menu-divider
+	&:first-child
+	&:last-child
+	& + &
+		display none
+.bp3-menu-width
+	width 180px
+.bp3-menubar
+	height 26px
+	.bp3-button
+		color inherit !important
+.bp3-menubar-popover
+	.bp3-menu
+		max-height calc(100vh - 10px)
+		overflow-x hidden
+		overflow-y auto
+		&::-webkit-scrollbar-track
+		&::-webkit-scrollbar-thumb
+			border-radius 0 3px 3px 0
+.bp3-file-input:not(.bp3-file-input-has-selection)
+	.bp3-file-upload-input
+		color #5c708099
+.bp3-file-upload-input
+	text-align left
+	&:after
+		@extend .text-ellipsis, .px-2
+
+::-webkit-scrollbar
+	-webkit-appearance none
+	appearance none
+	width 12px
+	height 12px
+::-webkit-scrollbar-track
+	background-color #eee
+	box-shadow inset 0 0 4px 0 #ddd
+::-webkit-scrollbar-thumb
+	border solid 4px transparent
+	background-color #ccc
+	&:hover
+		background-color #bbb
+	&:active
+		background-color #aaa

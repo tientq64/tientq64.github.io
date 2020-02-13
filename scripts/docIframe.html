@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="vi">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<title>ThwOS</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@blueprintjs/icons@3.13.0/lib/css/blueprint-icons.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@blueprintjs/core@3.4.0/lib/css/blueprint.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@blueprintjs/select@3.4.0/lib/css/blueprint-select.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@blueprintjs/datetime@3.4.0/lib/css/blueprint-datetime.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<script> delete module </script>
 	<script src="https://cdn.jsdelivr.net/gh/tiencoffee/libs/tslib.min.js"></script>
@@ -25,24 +23,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/@blueprintjs/select@3.4.0/dist/select.bundle.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@blueprintjs/datetime@3.4.0/dist/datetime.bundle.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bro-fs@0.6.0/dist/bro-fs.min.js"></script>
-	<script src="libs/js-yaml.min.js"></script>
 	<script src="libs/hammer.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/locale/vi.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jszip@3.2.1/dist/jszip.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/fuzzysort@1.1.4/fuzzysort.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/tiencoffee/libs/coffee.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/tiencoffee/libs/stylus.min.js"></script>
 	<script src="libs/fetch2.js"></script>
+	<script id="script-app"> {{code}} </script>
+	<style> {{css}} </style>
 </head>
 <body>
 	<div id="app"></div>
-	<script>
-		(async function() {
-			eval(coffee.compile(await fetch2("index.coffee"), {bare: true}))
-		})()
-	</script>
 </body>
-</html>

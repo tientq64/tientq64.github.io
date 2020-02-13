@@ -1,71 +1,161 @@
-@font-face
-	font-family "Press Start 2P"
-	src url("https://cdn.jsdelivr.net/gh/tiencoffee/fonts/FVF Fernando.ttf")
-
-body
-	user-select none
-	-webkit-user-drag none
-	user-drag none
-
-#game
-#app
-.d-full
+html
+	&[data-touchmove]
+		.App__touchmove
+			pointer-events auto
+.App__app--fullscreen
+	.App__taskbar
+		visibility hidden
+		.bp3-overlay
+			visibility visible
+.App__taskBtns
+	display grid
+	grid-auto-columns minmax(40px, 180px)
+	grid-auto-flow column
+	grid-gap 5px
+.App__taskBtnContextMenu
+	width 200px
+.Win__win
+	width auto
+	height auto
+	visibility hidden
+	transform scale(.9)
+	opacity 0
+.Win__win--iframeMounted
+	visibility visible
+	transform scale(1)
+	opacity 1
+	transition transform .3s ease, opacity .3s ease
+.Win__win--transition
+	&-exit
+		transform scale(1)
+		opacity 1
+	&-exit-active
+		transform scale(.9)
+		opacity 0
+		transition transform .3s ease, opacity .3s ease
+.Win__win--maximize
+	animation Win__win--maximize .3s ease forwards
+.Win__win--maximize
+.Win__win--fullscreen
+.Win__win--fullscreenTaskbar
+	.Win__header
+		margin 0 !important
+		border-bottom 0
+		border-radius 0
+	.Win__body
+		margin 0 !important
+		padding-bottom 0
+@keyframes Win__win--maximize
+	to
+		left 0
+		top 0
+		width 100%
+		height 100%
+		max-width 100%
+		max-height 100%
+		border-radius 0
+.Win__win--unmaximize
+	animation Win__win--unmaximize .3s ease forwards
+@keyframes Win__win--unmaximize
+	from
+		left 0
+		top 0
+		width 100%
+		height 100%
+		max-width 100%
+		max-height 100%
+		border-radius 0
+.Win__win--fullscreen
+.Win__win--fullscreenTaskbar
+	position fixed
+	left 0 !important
+	top 0 !important
+	width 100% !important
+	height 100% !important
+	border-radius 0 !important
+	.Win__header
+		height 0
+		min-height 0
+		visibility hidden
+		.bp3-overlay
+			visibility visible
+.Win__win--fullscreen
+	max-width 100% !important
+	max-height 100% !important
+.Win__win--isDesktop
+	background transparent !important
+	.Win__iframe
+		background transparent !important
+.Win__header
+	min-height 32px
+	border-bottom solid 1px #cad0d4
+	background inherit
+	box-shadow none
+	transition margin .1s ease
+.Win__title
+	padding 3px 0
+.Win__body
+	padding-bottom 4px
+	border-radius 0 0 6px 6px
+	transition margin .1s ease
+.Win__iframe
+	max-height -webkit-fill-available
+	border 0
+	background #fff
+.Win__resizer
+	left -7px
+	top -7px
+	width calc(100% + 14px)
+	height calc(100% + 14px)
+	pointer-events none
+.Win__resizerEdge
 	position absolute
-	width 100%
-	height 100%
-
-for ver, i in top "" bottom
-	for hor, j in left "" right
-		.d-{ver + hor or "middle"}
-			position absolute
-			if hor is right
-				right 0
-			else
-				left j * 50%
-			if ver is bottom
-				bottom 0
-			else
-				top i * 50%
-			if !hor and !ver
-				transform translate(-50%, -50%)
-			else if !hor
-				transform translateX(-50%)
-			else if !ver
-				transform translateY(-50%)
-
-for i in 0..8
-	val = i / 8 * 100%
-	.w-{i}
-		width val
-	.h-{i}
-		height val
-
-props = {
-	m: margin
-	p: padding
-}
-poss = {
-	"": ""
-	x: 0
-	y: 0
-	l: -left
-	t: -top
-	r: -right
-	b: -bottom
-}
-for i, prop in props
-	for j, pos in poss
-		for v in 0..4
-			val = (v)rem
-			.{i}{j}-{v}
-				if j is "x"
-					{prop}-left val
-					{prop}-right val
-				else if j is "y"
-					{prop}-top val
-					{prop}-bottom val
-				else
-					{prop}{pos} val
-
-[v-cloak]
-	display none
+	pointer-events auto
+	&[data-edge=n-]
+	&[data-edge=s-]
+		left 0
+		width 100%
+		height 8px
+		cursor n-resize
+	&[data-edge=n-]
+		top 0
+	&[data-edge=s-]
+		bottom 0
+	&[data-edge=-w]
+	&[data-edge=-e]
+		top 0
+		width 8px
+		height 100%
+		cursor w-resize
+	&[data-edge=-w]
+		left 0
+	&[data-edge=-e]
+		right 0
+	&[data-edge=nw]
+	&[data-edge=ne]
+	&[data-edge=sw]
+	&[data-edge=se]
+		width 24px
+		height 24px
+	&[data-edge=nw]
+		left 0
+		top 0
+		cursor nw-resize
+		clip-path polygon(0 0, 24px 0, 24px 8px, 8px 8px, 8px 24px, 0 24px)
+	&[data-edge=ne]
+		right 0
+		top 0
+		cursor ne-resize
+		clip-path polygon(0 0, 24px 0, 24px 24px, 16px 24px, 16px 8px, 0 8px)
+	&[data-edge=sw]
+		left 0
+		bottom 0
+		cursor ne-resize
+		clip-path polygon(0 0, 8px 0, 8px 16px, 24px 16px, 24px 24px, 0 24px)
+	&[data-edge=se]
+		right 0
+		bottom 0
+		cursor nw-resize
+		clip-path polygon(16px 0, 24px 0, 24px 24px, 0 24px, 0 16px, 16px 16px)
+.App__touchmove
+	pointer-events none

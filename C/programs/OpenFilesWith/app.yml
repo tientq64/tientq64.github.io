@@ -1,0 +1,8 @@
+name: OpenFilesWith
+icon: applications
+width: 360
+height: auto
+minimizable: no
+maximizable: no
+resizable: no
+isSystem: yes

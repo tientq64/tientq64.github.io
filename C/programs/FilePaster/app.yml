@@ -1,0 +1,6 @@
+name: FilePaster
+icon: clipboard
+width: 400
+height: auto
+picker: yes
+isSystem: yes

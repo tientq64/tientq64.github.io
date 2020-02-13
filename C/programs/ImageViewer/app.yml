@@ -1,0 +1,6 @@
+name: ImageViewer
+icon: media
+exts: [png, jpg, jpeg, gif]
+width: 960
+height: 640
+isSystem: yes

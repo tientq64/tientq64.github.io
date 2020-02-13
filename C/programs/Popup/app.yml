@@ -1,0 +1,9 @@
+name: Popup
+icon: error
+width: 380
+height: auto
+minimizable: no
+maximizable: no
+resizable: no
+picker: yes
+isSystem: yes

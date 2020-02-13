@@ -1,0 +1,5 @@
+name: GameBoyAdvance
+icon: cube
+exts: [gba]
+width: 480
+height: 346

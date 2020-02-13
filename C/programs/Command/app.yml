@@ -1,0 +1,5 @@
+name: Command
+icon: console
+width: 640
+height: 460
+isSystem: yes
